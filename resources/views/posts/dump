@@ -1,0 +1,79 @@
+@extends('layouts.admin_master')
+
+@section('content')
+  <div style="height:70px" ;></div>
+    <div class="row">
+     @include('../partials/admin_menubar')
+		  <div class="col-sm-8 main_content">
+                        <h2 class="text-center" style="text-decoration:underline;">Posts Panel</h2>
+            <div style="height:10px" ;></div>
+           
+            <!--POSTS BEGINS -->
+            <div class="container post_pan">
+				<!--POSTS BEGINS -->
+				    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th>[Title]</th>
+                <th>[Title]</th>
+                <th>[Title]</th>
+            </tr>
+        </thead>
+        <tfoot>
+            <tr>
+                <th>[Title]</th>
+                <th>[Title]</th>
+                <th>[Title]</th>
+            </tr>        
+        </tfoot>
+        <tbody>
+            <tr>
+                <td>[data]</td>
+                <td>[data]</td>
+                <td>[data]</td>
+            </tr>
+            <tr>
+                <td>[data]</td>
+                <td>[data]</td>
+                <td>[data]</td>
+            </tr>
+        </tbody>
+    </table>
+
+				<!--POSTS BEGINS -->
+				
+                <div class="row" style="background-color:black;">
+                    <div class="col-sm-4">
+                        <a href="post.php?post_id='.$rows['id'].'">Post Title</a>
+                    </div>
+                    <div class="col-sm-2">
+                        Options
+                    </div>
+                    <div class="col-sm-3">
+                        Time Created
+                    </div>
+                </div>
+					 @foreach($posts as $post)
+						<div class="row" style="background-color:#96653b;">
+							<div class="col-sm-4">
+								<a href="/post/{{$post->id}}">{{ str_limit($post->title, 35) }}...</a> 
+							</div>
+							<div class="col-sm-8">
+								<a href="/post/{{$post->id}}" class="btn btn-info btn-xs">View</a> <a href="/post/edit/{{$post->id}}" class="btn btn-warning btn-xs">Edit</a>
+								{{ Form::open(array('url' => '/post/'.$post->id, 'method' => 'DELETE')) }}
+									{{ Form::submit('Delete', null, ['class' => 'btn btn-danger btn-xs']) }}
+									{{ Form::close() }}
+								
+								 {{$post->created_at}}
+							</div>
+						</div>
+					@endforeach
+                                
+            </div>
+            <!--POSTS ENDS -->
+        
+        </div>
+     @include('../partials/admin_right-sidebar')
+</div>
+
+@endsection
