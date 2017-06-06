@@ -55,11 +55,11 @@ return [
         ], */
         'mysql' => [
             'driver' => 'mysql',
-            'host' => env('DB_HOST', '139.162.201.184'),
+            'host' => env('DB_HOST', '109.74.193.119'),
             'port' => env('DB_PORT', '3306'),
-            'database' => env('DB_DATABASE', 'techsite'),
+            'database' => env('DB_DATABASE', 'pqtech'),
             'username' => env('DB_USERNAME', 'forge'),
-            'password' => env('DB_PASSWORD', 'lMQH1kYxMz9vgxRd9EeF'),
+            'password' => env('DB_PASSWORD', 'C57dPdD7kRHJvoxAnusj'),
             'unix_socket' => env('DB_SOCKET', ''),
             'charset' => 'utf8mb4',
             'collation' => 'utf8mb4_unicode_ci',
