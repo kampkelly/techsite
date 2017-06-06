@@ -27,11 +27,13 @@ Route::post('/postse', 'PostController@store');
 Route::post('/comments', 'CommentController@store');
 Route::post('/postedit', 'PostController@update');
 //post preview begins
+/*
 $post = DB::selectOne("SELECT * FROM post_previews WHERE id = 1");
 Route::get('/posts_preview', function () {
     return view('posts_preview.show', compact('post'));
 });
 Route::post('/preview', 'Post_previewController@store');
+*/
 //post preview
 Route::get('/category/{show}', 'CategoryController@show');
 Route::post('/cat', function(){
