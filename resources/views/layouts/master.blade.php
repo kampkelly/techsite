@@ -50,13 +50,6 @@
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
     </head>
-    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<script>
-  (adsbygoogle = window.adsbygoogle || []).push({
-    google_ad_client: "ca-pub-8062272899203343",
-    enable_page_level_ads: true
-  });
-</script>
     <body>
         @include('../partials/header') 
 		@if($flash = session('message'))

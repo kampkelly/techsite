@@ -1,6 +1,6 @@
 $(document).ready(function () {
 	//  $(".top_post").hide();
-
+	$("p img").removeClass("img-responsive");
 	$(".top_post").fadeOut("fast");
 	$(".top_post ").fadeIn(5000);
 	$(".other_post").fadeOut("fast");
