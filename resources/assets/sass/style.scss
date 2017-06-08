@@ -224,8 +224,11 @@ header {
 p img {
 	//   overflow-x: hidden;
 //	width: 100%;
-//	height: 40%;
-	margin: 0px 0px 0px 0px;
+	//	height: 40%;
+	.img-responsive {
+		margin: 0px 0px 0px 0px !important;
+		display: auto !important;
+	}
 }
 
 //FOOTER BEGINS HERE
