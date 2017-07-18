@@ -18,15 +18,15 @@
             <ol>
                 <li>
                     <img src="https://blogs-images.forbes.com/erikkain/files/2016/06/Game-of-Thrones-S06E03-Daenerys-1200x798.jpg">
-                       <div class="ism-caption ism-caption-0"><a href="https://www.google.com" style="color:white !important;" target="blank">Visit Website</a></div> 
+                       <div class="ism-caption ism-caption-0"><a href="https://www.google.com" style="color:white !important;" target="blank">Game of thrones season 7 out</a></div> 
                 </li>
                 <li>
-                    <img src="https://blogs-images.forbes.com/erikkain/files/2016/06/Game-of-Thrones-S06E03-Daenerys-1200x798.jpg">
-                          <div class="ism-caption ism-caption-0">My slide caption text</div> 
+                    <img src="{{ asset('1.jpg') }}">
+                          <div class="ism-caption ism-caption-0">Unleash your creativity</div> 
                 </li>
                 <li>
-                    <img src="https://blogs-images.forbes.com/erikkain/files/2016/06/Game-of-Thrones-S06E03-Daenerys-1200x798.jpg">
-                         <div class="ism-caption ism-caption-0">My slide caption text</div>
+                    <img src="{{ asset('2.jpg') }}">
+                         <div class="ism-caption ism-caption-0">Why you should own a macbook</div>
                 </li>
             </ol>
         </div>

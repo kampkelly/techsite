@@ -36,22 +36,7 @@ class CommentController extends Controller
     public function store(Request $request)
     {
         //
-		$this->validate(request(), [
-           'comment' => 'required|min:8'
-        ]);
-        //
-         Comment::create([
-            'comment' => request('comment'),
-            'name' => request('comment_name'),
-            'post_id' => request('post_id'),
-        ]);
-		$id = request('post_id');
-      //  return redirect('/post/.$id');
-	//	return redirect()->route('/posts', ['id' => $id]);
-		session()->flash('message', 'Comment successfully posted!');
-		return redirect()->action(
-			'PostController@show', ['id' => $id]
-		);
+		s
     }
 
     /**
