@@ -11,9 +11,9 @@
             <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Technology <span class="glyphicon glyphicon-arrow-down"></span></a>
                 <div class="dropdown-menu">
-                    <a class="dropdown-item" href="category.php?category_id=3">Computers/Windows</a>
+                    <a class="dropdown-item" href="#">Computers/Windows</a>
                     <a class="dropdown-item" href="#">Ios/Machintosh</a>
-                    <a class="dropdown-item" href="category.php?category_id=2">Android/Apps</a>
+                    <a class="dropdown-item" href="#">Android/Apps</a>
                     <div class="dropdown-divider"></div>
                     <a class="dropdown-item" href="#">Virtual Reality</a>
                 </div>
