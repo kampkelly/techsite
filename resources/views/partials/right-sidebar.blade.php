@@ -13,7 +13,7 @@
         </div>
     </form>
         <a data-pin-do="embedBoard" data-pin-board-width="250" data-pin-scale-height="250" data-pin-scale-width="60" href="https://www.pinterest.com/nicolehollissf/tech/"></a>
-        <h4 class="text-center">Sponsored Ads</h4>
+        <h4 class="text-center">Sponsoredd Ads</h4>
         <div class="ism-slider" data-transition_type="zoom" data-play_type="loop" data-image_fx="zoompan" id="my-slider" style="width:97%; height: 200px; z-index:0 !important;">
             <ol>
                 <li>
