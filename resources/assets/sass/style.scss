@@ -1,9 +1,14 @@
 // $navbar: #895b05;
-$navbar: #171616;
+$navbar: #006666;
+$navvbar: #171616;
 $side: #96653b;
 $panel: #cb9126;
 $side-heads: #e56a0f;
 $line-space: 35px;
+$smartphone: "(min-width: 0px) and (max-width: 467px)";
+$tablet: "(min-width: 468px) and (max-width: 767px)";
+$mini-laptop: "(min-width: 768px) and (max-width: 991px)";
+$desktop: "(min-width: 992px)";
 %spc {
 	line-height: $line-space;
 	text-align: justify;
@@ -50,7 +55,7 @@ header {
 	//    z-index: 1;
 	h3 {
 		margin: 0px;
-		padding-top: 10px;
+		padding: 10px;
 		color: white;
 	}
 	background-color: $navbar;
@@ -91,8 +96,25 @@ header {
 		background-color: #efef71;
 	}
 }
-
+.btn {
+	color: white !important;
+}
 .pan_pad {
+	@media #{$smartphone} {
+		height: 450px;
+	}
+	@media #{$tablet} {
+		height: 650px;
+	}
+	h4 a {
+		//color: #171616 !important;
+		color: $side !important;
+	}
+	.panel-headin {
+		a {
+			color: #333333;
+		}
+	}
 	.panel-body {
 		p {
 			font-size: 110%;
@@ -103,9 +125,9 @@ header {
 		}
 	}
 	#pan_head {
-		background-color: #312929;
-		border: 1px solid black;
-		border-radius: 2%;
+		background-color: #F8F4F4;
+	//	border: 1px solid black;
+	//	border-radius: 2%;
 		h4,
 		span {
 			color: white;
@@ -128,12 +150,12 @@ header {
 }
 
 .category_post {
-	opacity: 0.3;
+	//opacity: 0.3;
 }
 
 .category_post_show {
-	opacity: 1;
-	transition: 4s;
+//	opacity: 1;
+//	transition: 4s;
 }
 
 .navbar-inverse {

@@ -6,41 +6,40 @@
     <div class="col-sm-9">
         <div class="contaier-fluid">
 			@include('../partials/errors')
-                         <h2 class="text-center" style="text-decoration:underline;">Post</h2>
+                         
                 <div style="height:10px" ;></div>
-                             <div class="pan_pad">
-                                <div class="panel panel-default">  <!--to put anything inside panel you                                            have to create another div tag-->
-                                <div class="panel-body">
-                                    <div id="pan_head">
-                                        <div class="panel-header">
-                                            <h4 class="text-center" style="margin-top:8px; font-size:2em;">{{$post->title}}
-                                            <span class="text-right small" style="font-size:9px;"> {{$post->created_at}}</span></h4>
-											@if(count($post->tags))
-												<ul>
-													
-												</ul>
-											@endif
-											<h4></h4>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-sm-1 col-xs-12"></div>
-                                            <div class="col-sm-10 col-xs-12">
-                                               <!--  <img src="{{ asset('uploads/'.$post->image) }}" width="100%" height="40%"> -->
-                                                 <img src="{{ asset('uploads/'.$post->image) }}">
-                                            </div>
-                                            <div class="col-sm-1 col-xs-12"></div>
-                                        </div>
+                     <div class="pan_pad">
+                        <div class="panel panel-default">  <!--to put anything inside panel you                                            have to create another div tag-->
+                        <div class="panel-body">
+                            <div id="pan_head">
+                                <div class="panel-header">
+                                    <h4 class="text-center" style="margin-top:8px; font-size:2em; color: #96653b;">{{$post->title}}
+                                    <span class="text-right small" style="font-size:9px; color: #96653b;"> {{$post->created_at}}</span></h4>
+									@if(count($post->tags))
+										<ul>
+											
+										</ul>
+									@endif
+									<h4></h4>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-1 col-xs-12"></div>
+                                    <div class="col-sm-10 col-xs-12">
+                                       <!--  <img src="{{ asset('uploads/'.$post->image) }}" width="100%" height="40%"> -->
+                                         <img src="{{ asset('uploads/'.$post->image) }}" class="img-responsive img-rounded">
                                     </div>
-                                     <div style="height:10px"></div>
-                                     <div style="padding-left:30px;">
-                                    </div>
-                                    <div style="height:25px"></div>
-                                    <section>
-                                        <p class="spc">{!! $post->body !!}</p>
-                                    </section>
+                                    <div class="col-sm-1 col-xs-12"></div>
                                 </div>
                             </div>
+                             
+                             
+                            <div style="height:25px"></div>
+                            <section>
+                                <p class="spc">{!! $post->body !!}</p>
+                            </section>
                         </div>
+                    </div>
+                </div>
                 <!-- Go to www.addthis.com/dashboard to customize your tools -->
                 <div class="text-center">
                     <div class="addthis_inline_share_toolbox"></div>

@@ -1,13 +1,13 @@
 $(document).ready(function () {
 	//  $(".top_post").hide();
 	$("p img").removeClass("img-responsive");
-	$(".top_post").fadeOut("fast");
-	$(".top_post ").fadeIn(5000);
-	$(".other_post").fadeOut("fast");
-	$(".other_post").fadeIn(7000); 
+//	$(".top_post").fadeOut("fast");
+//	$(".top_post ").fadeIn(5000);
+//	$(".other_post").fadeOut("fast");
+//	$(".other_post").fadeIn(7000); 
 	// $('#other_post').css("position", "absolute");
-	$('#other_post').addClass("other_post_right");
-	$('.category_post').addClass("category_post_show");
+//	$('#other_post').addClass("other_post_right");
+	//$('.category_post').addClass("category_post_show");
 	$("img").addClass("img-responsive");
 	if ($(window).width() > 767) {
 		$(window).scroll(function () {

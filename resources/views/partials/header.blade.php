@@ -1,5 +1,5 @@
 <header ng-style="{'background-color': color}">
-    <h3 class="text-center">PQARENA</h3>
+    <h3 class="text-center">PQTECH</h3>
     <div class="container">
         <ul class="nav nav-tabs text-center">
             <li class="nav-item">
