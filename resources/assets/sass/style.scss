@@ -23,7 +23,32 @@ $desktop: "(min-width: 992px)";
 	border-radius: 1%;
 	padding: 4px 14px 4px 14px;
 }
-
+//new header
+#second_ul {
+	@media (min-width: 0px) and (max-width: 767px) {
+		display: none;
+	}
+}
+.mob {
+	@media (min-width: 768px) {
+		display: none;
+	//	visibility: hidden;
+	}
+}
+//about
+.oval {
+  width: 30%;
+  height: 30%;
+  border-radius: 50%;
+  float: left;
+  shape-outside: ellipse();
+  background-clip: content-box;
+}
+.skills {
+	li {color: $side;}
+}
+//about
+//new header
 
 /* @media only screen and (max-width: 767px) {
 %spc {
@@ -50,7 +75,7 @@ body {
 	background-color: #fffbfb !important;
 }
 
-header {
+.header {
 	//  position: fixed;
 	//    z-index: 1;
 	h3 {
@@ -136,7 +161,7 @@ header {
 	.panel {
 		box-shadow: 0.4px 0.4px 0.4px 1px #888888;
 	}
-	border: 3px solid #f7f7f7;
+//	border: 3px solid #f7f7f7;
 }
 
 .other_post_right {
@@ -261,7 +286,7 @@ p img {
 
 //FOOTER BEGINS HERE
 footer {
-	font-family: 'Architects Daughter', cursive !important;
+	//font-family: 'Architects Daughter', cursive !important;
 	min-height: 160px;
 	background-color: $navbar;
 	z-index: 4 !important;
@@ -273,7 +298,7 @@ footer {
 		color: white !important;
 	}
 	.row {
-		background-color: #272626;
+		background-color: #286090;
 		min-height: 160px;
 		padding: 20px 0px 10px 0px;
 		// padding-top: 90px;
@@ -326,7 +351,7 @@ footer {
 }
 
 @media only screen and (max-width: 767px) {
-	header {
+	.header {
 		.nav-link {
 			margin-right: 8px !important;
 			padding: 0px !important;
@@ -342,7 +367,7 @@ footer {
 		}
 	}
 	.header_hei {
-		margin-top: 90px;
+	//	margin-top: 90px;
 	}
 	.pan_pad {
 		padding: 0px 0px 0px 0px !important;

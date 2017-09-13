@@ -1,10 +1,7 @@
- <div class="container-fluid well">
+ <div class="container-fluid" style="background:#FAFAFA;">
      <div class="row">
-         <div class="col-sm-2">
-             <img src="{{ asset('man.jpg') }}" class="img-responsive img-circle">
-         </div>
-         <div class="col-ssm-10">
-            <h5>He is a programmer/developer who makes use of php, laravel, rails, javascript, etc. Interested in technology, sports, etc.</h5>
-         </div>
+     <h4 class="text-center" style="text-decoration: underline;" >About Runor Adjekpiyede</h4>
+		<img src="{{ asset('man.png') }}" class="oval">
+		<p>I am a full stack developer with skills in PHP, Laravel, Python, Javascript and <a href="#">several others</a> :-)</p>
      </div>
  </div>

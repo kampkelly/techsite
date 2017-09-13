@@ -1,17 +1,17 @@
 @extends('layouts.master')
 
 @section('content')
-  <div class="row">
+  <div class="row container">
     <!--INCLUDE SIDEBAR HERE -->
     <div class="col-sm-9">
         <div class="contaier-fluid">
-            <h2 class="text-center">Blog Posts</h2>
+            <h2 class="text-center" style="color: grey;">Blog Posts</h2>
             <div id="other_pos"> 
 			  @foreach($posts as $post)
 				<div href="/post/{{$post->id}}" class="other_post col-sm-6 col-md-4 pan_pad">
-					<div class="pane" style="height:360px !important; padding: 15px;">  
+					<div class="pane" style="height:360px !important;">  
 							<h4><a href="/post/{{$post->id}}">{{ str_limit($post->title) }}</a></h4>
-							<h6 class="text-right small">{{$post->created_at}} </h6>
+							<h6 class="text-right small">{{$post->created_at->diffForHumans()}}</h6>
 					<div class="panel-headin">
             <a href="/post/{{$post->id}}">
 							<img src="{{ asset('uploads/'.$post->image) }}" width="100%">

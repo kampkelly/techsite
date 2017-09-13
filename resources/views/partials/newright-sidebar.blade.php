@@ -12,30 +12,14 @@
             </span>
         </div>
     </form>
-        <a data-pin-do="embedBoard" data-pin-board-width="250" data-pin-scale-height="250" data-pin-scale-width="60" href="https://www.pinterest.com/nicolehollissf/tech/"></a>
-        <h4 class="text-center">Sponsored Ads</h4>
-        <div class="ism-slider" data-transition_type="zoom" data-play_type="loop" data-image_fx="zoompan" id="my-slider" style="width:97%; height: 200px; z-index:0 !important;">
-            <ol>
-                <li>
-                    <img src="https://blogs-images.forbes.com/erikkain/files/2016/06/Game-of-Thrones-S06E03-Daenerys-1200x798.jpg">
-                       <div class="ism-caption ism-caption-0"><a href="https://www.google.com" style="color:white !important;" target="blank">Game of thrones season 7 out</a></div> 
-                </li>
-                <li>
-                    <img src="{{ asset('1.jpg') }}">
-                          <div class="ism-caption ism-caption-0">Unleash your creativity</div> 
-                </li>
-                <li>
-                    <img src="{{ asset('2.jpg') }}">
-                         <div class="ism-caption ism-caption-0">Why you should own a macbook</div>
-                </li>
-            </ol>
-        </div>
 
         <!--RECENT POSTS BEGINS-->
         <h4 class="text-center">Recent Posts</h4>
-        <div class="list-group">
-           
-        </div>
+        <ul class="list-group">
+           @foreach($sideposts as $sidepost)
+                <li class="list-group-item"><a>{{$sidepost->title}}</a></li>
+            @endforeach
+        </ul>
         <!--RECENT POSTS ENDS-->
         <!--CATEGORIES BEGINS-->
         <h4 class="text-center">Categories</h4>

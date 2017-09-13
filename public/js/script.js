@@ -1,4 +1,11 @@
 $(document).ready(function () {
+	$(window).scroll(function () {
+		$('.kk').css("margin-top", "90px");
+	});
+	$('body').css("position", "relative");
+//	$('header').css("position", "fixed");
+	$('header').css("width", "100%");
+	$('header').css("z-index", "99");
 	//  $(".top_post").hide();
 	$("p img").removeClass("img-responsive");
 //	$(".top_post").fadeOut("fast");

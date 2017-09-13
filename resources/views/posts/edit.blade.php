@@ -41,7 +41,7 @@
 					</div>
 			  		<div class="form-group">
 							{{ Form::label('status', 'Status') }}
-						{{ Form::select('status', ['Published' => 'Publish', 'Save' => 'Save', 'Draft' => 'Draft'], null, ['class' => 'form-control']) }}
+						{{ Form::select('status', ['Published' => 'Publish', 'Save' => 'Save', 'Draft' => 'Draft', 'Sticky' => 'Sticky'], null, ['class' => 'form-control']) }}
 					</div>
 					<div class="form-group">
 							{{ Form::submit('Update!', null, ['class' => 'form-control btn btn-default btn-block']) }}

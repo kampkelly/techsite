@@ -1,20 +1,20 @@
 @extends('layouts.master')
 
 @section('content')
-  <div class="row">
+  <div class="row container">
     <!--INCLUDE SIDEBAR HERE -->
     <div class="col-sm-9">
         <div class="contaier-fluid">
 			@include('../partials/errors')
                          
                 <div style="height:10px" ;></div>
-                     <div class="pan_pad">
-                        <div class="panel panel-default">  <!--to put anything inside panel you                                            have to create another div tag-->
+                     <div class="pan_pd">
+                        <div class="pane panel-default">  <!--to put anything inside panel you                                            have to create another div tag-->
                         <div class="panel-body">
                             <div id="pan_head">
                                 <div class="panel-header">
                                     <h4 class="text-center" style="margin-top:8px; font-size:2em; color: #96653b;">{{$post->title}}
-                                    <span class="text-right small" style="font-size:9px; color: #96653b;"> {{$post->created_at}}</span></h4>
+                                    <span class="text-right small" style="font-size:9px; color: #96653b;"> {{$post->created_at->diffForHumans()}}</span></h4>
 									@if(count($post->tags))
 										<ul>
 											
@@ -94,11 +94,6 @@
         </div>
     </div>
      @include('../partials/right-sidebar')
-	   <script src="//assets.juicer.io/embed.js" type="text/javascript"></script>
-    <link href="//assets.juicer.io/embed.css" media="all" rel="stylesheet" type="text/css" />
-    <ul class="juicer-feed" data-feed-id="kamp" data-per="20">
-        <h1 class="referral"><a href="https://www.juicer.io">Powered by Juicer</a></h1>
-    </ul>
     <!-- Go to www.addthis.com/dashboard to customize your tools -->
     <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-590b6d62620c44d0"></script>
 

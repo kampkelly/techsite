@@ -18,7 +18,8 @@
         <script src="tinymce/js/tinymce/tinymce.min.j"></script>
     <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Architects+Daughter" rel="stylesheet">
-    <script src="http://dynamicdrive.com/dynamicindex16/autosaveform.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Crimson+Text" rel="stylesheet">
+ <!--   <script src="http://dynamicdrive.com/dynamicindex16/autosaveform.js"></script>  -->
     <script src="https://use.fontawesome.com/fa2b05ef33.js"></script>
     <script>
         tinymce.init({
@@ -51,7 +52,7 @@
         <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
     </head>
     <body>
-        @include('../partials/header') 
+        @include('../partials/new_header') 
 		@if($flash = session('message'))
 			<div class="alert alert-success" role="alert">
 				{{$flash}}

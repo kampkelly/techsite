@@ -17,6 +17,9 @@ Route::get('/about', function () {
 }); */
 
 Route::get('/', 'PostController@homepage');
+Route::get('/newhome', 'PostController@home');
+Route::get('/projects', 'HomeController@projects');
+Route::get('/contact', 'HomeController@contact');
 Route::get('/posts', 'PostController@index');
 Route::get('/posts/new', 'PostController@create');
 Route::get('/post/{show}', 'PostController@show');

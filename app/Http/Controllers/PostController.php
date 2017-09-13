@@ -71,13 +71,27 @@ class PostController extends Controller
         //
    //   $posters = Post::all();
    #   $topposts = Post::orderBy('id', 'DESC')->get();
-      $topposts = Post::where('status', 'Published')->orderBy('id', 'desc')->take(2)->get();  //eloquent method
+      $topposts = Post::where('status', 'Sticky')->orderBy('id', 'desc')->take(2)->get();  //eloquent method
+   #   $posts = Post::all()->paginate(15);
+    #   $posts = Post::orderBy('id', 'DESC')->simplePaginate(1);
+        $posts = DB::table('posts')->where('status', 'Published')->orderBy('id', 'desc')->simplePaginate(12);  //DB method
+      $categories = Category::all();
+        
+        return view('homepage', compact('posts', 'categories', 'topposts'));
+    } 
+
+    public function home()
+    {
+        //
+   //   $posters = Post::all();
+   #   $topposts = Post::orderBy('id', 'DESC')->get();
+      $topposts = Post::where('status', 'Sticky')->orderBy('id', 'desc')->take(2)->get();  //eloquent method
    #   $posts = Post::all()->paginate(15);
 	#	$posts = Post::orderBy('id', 'DESC')->simplePaginate(1);
-        $posts = DB::table('posts')->where('status', 'Published')->orderBy('id', 'desc')->simplePaginate(6);  //DB method
+        $posts = DB::table('posts')->where('status', 'Published')->orderBy('id', 'asc')->simplePaginate(6);  //DB method
       $categories = Category::all();
 		
-        return view('homepage', compact('posts', 'categories', 'topposts'));
+        return view('home', compact('posts', 'categories', 'topposts'));
     }  
   
     public function index()
@@ -85,7 +99,7 @@ class PostController extends Controller
         //
         $categories = Category::all();
           #  $posts = DB::table('posts')->where('status', 'Published')->orderBy('id', 'desc')->get();
-            $posts = Post::where('status', 'Published')->orderBy('id', 'desc')->simplePaginate(12);  //eloquent method
+            $posts = Post::where('status', 'Published')->orWhere('status', 'Sticky')->orderBy('id', 'asc')->simplePaginate(12);  //eloquent method
         /*  $posts = Post::latest()
                 ->filter(request(['month', 'year']))   //this is for archives
                 ->get(); */
