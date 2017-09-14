@@ -5,7 +5,7 @@
     <!--INCLUDE SIDEBAR HERE -->
     <div class="col-sm-9 kk">
         <section class="" style="padding: 0px 20px 0px 20px;">
-            <h3 style="color: #96653b">Hey, I'm Runor  Adjekpiyede, <span style="font-size: 70%; color: #cb9126;">Freelancer, Full Stack Developer</span> <span style="font-size: 70%;">and I</span> build<br> beautiful websites. <a href="#" style="font-size: 50%; text-decoration: underline;"><br>More about me...</a> </h3>
+            <h3 style="color: #96653b">Hey, I'm Runor  Adjekpiyede, <span style="font-size: 70%; ">Freelancer, Full Stack Developer</span> <span style="font-size: 70%;">and I</span> build<br> <span style="color: #286090;"> beautiful websites.</span> <a href="#" style="font-size: 50%; text-decoration: underline;"><br>More about me...</a> </h3>
             <h4 class="text-center text-info">A Quick Look</h4>
             <div class="row" style="background:#337AB7; padding: 10px; border: 1px #337AB7; border-radius: 4px; display: none;">
                 <div class="col-xs-6 col-sm-6 col-md-6 col-lg-3">
