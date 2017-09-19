@@ -24,7 +24,7 @@
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
         <script src="{{ asset('js/ism-2.2.min.js') }}"></script>
         <script src="{{ asset('js/dmStyle.js') }}"></script>
-        <script src="{{ asset('js/script.js') }}"></script>
+        <script src="{{ asset('js/script1.js') }}"></script>
         <script src="{{ asset('tinymce/js/tinymce/tinymce.min.js') }}"></script>
         <script src="tinymce/js/tinymce/tinymce.min.j"></script>
 		<!-- <script src="https://cloud.tinymce.com/stable/tinymce.min.js?apiKey=zf9z1rq9bwvkedrhxres2s2fx4k71u9i9a9l6chh39jmfgtk"></script> -->
