@@ -21,6 +21,9 @@
 	#second_ul {
 		padding-top: 20px; padding-left: 100px;
 	}
+	#second_ul ul li {
+		margin-right: 70px;
+	}
 	.mob {
 		padding-top: 18px;
 	}
@@ -45,7 +48,7 @@
 				<li class="mob" style="display: non; flex: 1; display: none;"><a class="nav-link active" href="#"><span class="glyphicon glyphicon-menu-hamburger"></span></a></li>
 				<li id="second_ul">
 					<ul class="list-inline nav">
-						<li style="flex: 1;"><h4><a class="nav-link active" href="/">Home</a></h4></li>
+						<li><h4><a class="nav-link active" href="/">Home</a></h4></li>
 						<li> <h4><a class="nav-link active" href="/blog">Blog</a></h4></li>
 						<li style="position: relative;">
 						<h4><a class="drop-item" href="#" style="display: none;">Tags <span class="glyphicon glyphicon-arrow-down"></span></a></h4>
@@ -55,8 +58,8 @@
 							@endforeach
 						</ul>
 						</li>
-						<li style="flex: 1;"><h4><a class="dropdown-item" href="/projects">Projects</a></h4></li>
-						<li style="flex: 1;"><h4><a class="dropdown-item" href="/contact">Contact</a></h4></li>
+						<li><h4><a class="dropdown-item" href="/projects">Projects</a></h4></li>
+						<li><h4><a class="dropdown-item" href="/contact">Contact</a></h4></li>
 					</ul>
 				</li>
 			</ul>

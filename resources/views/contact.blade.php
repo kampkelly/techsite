@@ -5,7 +5,7 @@
     <!--INCLUDE SIDEBAR HERE -->
     <div class="topspace">
     <div class="col-sm-9 kk">
-       <h4 class="text-center">Please leave me a message and I will get back to you shortly.</h4><br><br>
+       <h4 class="text-center">Leave a message and I will get back to you shortly.</h4><br><br>
             <form action="/contact" method="POST" class="form-horizontal first-form" role="form" files="true" enctype="multipart/form-data">
             {{ csrf_field() }}
                     <div class="form-group">

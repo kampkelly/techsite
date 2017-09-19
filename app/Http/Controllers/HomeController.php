@@ -58,6 +58,7 @@ class HomeController extends Controller
                   $message->to( $email_data['recipient'] )
                           ->subject( $email_data['subject'] );
               }); 
+              session()->flash('message', 'Message Sent!');
         return view('contact');
     }
 }

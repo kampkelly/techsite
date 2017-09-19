@@ -22,10 +22,10 @@
                 <h5>- <a href="https://salesnaija.com" target="blank">SalesNaija -  A website selling IT products.</a></h5>
                 <div class="row">
                     <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6" style="padding: 10px 40px 0px 40px;">
-                       <img src="{{ asset('showcase/sales1.png') }}" style="max-height: 200px;"> 
+                       <img src="{{ asset('showcase/sales1.png') }}" style="max-height: 200px; cursor: zoom-in;" class="fancybox" title="salesnaija home page"> 
                     </div>
                     <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6" style="padding: 10px 40px 0px 40px;">
-                       <img src="{{ asset('showcase/sales2.png') }}" style="max-height: 200px;"> 
+                       <img src="{{ asset('showcase/sales2.png') }}" style="max-height: 200px; cursor: zoom-in;" class="fancybox" title="salesnaija mobile"> 
                     </div>
                 </div>
             </li> 
@@ -34,10 +34,10 @@
                 <h5>- InstantPay -  A demo ecommerce website for women's fashion.</h5>
                 <div class="row">
                     <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6" style="padding: 10px 40px 0px 40px;">
-                       <img src="{{ asset('showcase/shopping2.png') }}" style="max-height: 200px;"> 
+                       <img src="{{ asset('showcase/shopping2.png') }}" style="max-height: 200px; cursor: zoom-in;" class="fancybox" title="shopping cart"> 
                     </div>
                     <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6" style="padding: 10px 40px 0px 40px;">
-                       <img src="{{ asset('showcase/shopping1.png') }}" style="max-height: 200px;"> 
+                       <img src="{{ asset('showcase/shopping1.png') }}" style="max-height: 200px; cursor: zoom-in;" class="fancybox" title="shopping homepage"> 
                     </div>
                 </div>
             </li>
@@ -46,7 +46,7 @@
             <h5>- <a href="http://elis-demo.ml" target="blank">Chatbot using natural language communication to provide information.</a></h5>
             <div class="row">
                 <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6" style="padding: 10px 40px 0px 40px;">
-                   <img src="{{ asset('showcase/elis1.png') }}" style="max-height: 200px;"> 
+                   <img src="{{ asset('showcase/elis1.png') }}" style="max-height: 200px; cursor: zoom-in;" class="fancybox" title="elis chatbot"> 
                 </div>
             </div>
             </li>
@@ -55,7 +55,7 @@
             <h5>- <a href="https://www.metallidurans15.com" target="blank">Student's Alumni website.</a></h5>
              <div class="row">
                     <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6" style="padding: 10px 40px 0px 40px;">
-                       <img src="{{ asset('showcase/1.png') }}" style="max-height: 200px;"> 
+                       <img src="{{ asset('showcase/1.png') }}" style="max-height: 200px; cursor: zoom-in;" class="fancybox" title="metallidurans homepage"> 
                     </div>
                     
                 </div>
@@ -65,10 +65,10 @@
             <h5>- <a href="#">TheInnovestors - connecting innovators with investors</a></h5>
              <div class="row">
                     <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6" style="padding: 10px 40px 0px 40px;">
-                       <img src="{{ asset('showcase/theinnovestors1.png') }}" style="max-height: 200px;"> 
+                       <img src="{{ asset('showcase/theinnovestors1.png') }}" style="max-height: 200px; cursor: zoom-in;" class="fancybox" title="theinnovestors homepage"> 
                     </div>
                     <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6" style="padding: 10px 40px 0px 40px;">
-                       <img src="{{ asset('showcase/theinnovestors2.png') }}" style="max-height: 200px;"> 
+                       <img src="{{ asset('showcase/theinnovestors2.png') }}" style="max-height: 200px; cursor: zoom-in;" class="fancybox" title="theinnovestors how it works"> 
                     </div>
                 </div>
             </li>
