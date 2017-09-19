@@ -99,7 +99,7 @@ class PostController extends Controller
         //
         $categories = Category::all();
           #  $posts = DB::table('posts')->where('status', 'Published')->orderBy('id', 'desc')->get();
-            $posts = Post::where('status', 'Published')->orWhere('status', 'Sticky')->orderBy('id', 'asc')->simplePaginate(12);  //eloquent method
+            $posts = Post::where('status', 'Published')->orWhere('status', 'Sticky')->orderBy('id', 'desc')->simplePaginate(12);  //eloquent method
         /*  $posts = Post::latest()
                 ->filter(request(['month', 'year']))   //this is for archives
                 ->get(); */
