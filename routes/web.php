@@ -15,7 +15,9 @@ use Illuminate\Support\Facades\Input;
 Route::get('/about', function () {
     return view::make('partials/about');
 }); */
-
+Route::get('/sitemap', function () {
+    return view('sitemap');
+});
 Route::get('/', 'PostController@home');
 Route::get('/home', 'PostController@home');
 Route::get('/projects', 'HomeController@projects');
