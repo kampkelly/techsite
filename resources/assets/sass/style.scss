@@ -157,7 +157,7 @@ body {
 }
 .pan_pad {
 	@media #{$smartphone} {
-		height: 450px;
+		max-height: 450px;
 	}
 	@media #{$tablet} {
 		height: 650px;
