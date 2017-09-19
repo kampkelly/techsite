@@ -5,16 +5,16 @@
         var addToAll = false;
         var gallery = false;
         var titlePosition = 'inside';
-        $(addToAll ? 'img' : 'img.fancybox').each(function(){
+        $(addToAll ? 'img' : 'img.fancybo').each(function(){
             var $this = $(this);
             var title = $this.attr('title');
             var src = $this.attr('data-big') || $this.attr('src');
-            var a = $('<a href="#" class="fancybox"></a>').attr('href', src).attr('title', title);
+            var a = $('<a href="#" class="fancybo"></a>').attr('href', src).attr('title', title);
             $this.wrap(a);
         });
         if (gallery)
-            $('a.fancybox').attr('rel', 'fancyboxgallery');
-        $('a.fancybox').fancybox({
+            $('a.fancybo').attr('rel', 'fancyboxgallery');
+        $('a.fancybo').fancybox({
             titlePosition: titlePosition
         });
     });
