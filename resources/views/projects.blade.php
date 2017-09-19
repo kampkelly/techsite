@@ -46,7 +46,7 @@
             <h5>- <a href="http://elis-demo.ml" target="blank">Chatbot using natural language communication to provide information.</a></h5>
             <div class="row">
                 <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6" style="padding: 10px 40px 0px 40px;">
-                   <img src="{{ asset('showcase/5.png') }}" style="max-height: 200px;"> 
+                   <img src="{{ asset('showcase/elis1.png') }}" style="max-height: 200px;"> 
                 </div>
             </div>
             </li>
@@ -57,9 +57,7 @@
                     <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6" style="padding: 10px 40px 0px 40px;">
                        <img src="{{ asset('showcase/1.png') }}" style="max-height: 200px;"> 
                     </div>
-                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6" style="padding: 10px 40px 0px 40px;">
-                       <img src="{{ asset('showcase/1.png') }}" style="max-height: 200px;"> 
-                    </div>
+                    
                 </div>
             </li>
             <hr>
