@@ -42,7 +42,7 @@
 				<li class="mob" style="display: non; flex: 1;"><a class="nav-link active" href="/blog">Posts</a></li>
 				<li class="mob" style="display: non; flex: 1;"><a class="nav-link active" href="/projects">Projects</a></li>
 				<li class="mob" style="display: non; flex: 1;"><a class="nav-link active" href="/contact">Contact</a></li>
-				<li class="mob" style="display: non; flex: 1;"><a class="nav-link active" href="#"><span class="glyphicon glyphicon-menu-hamburger"></span></a></li>
+				<li class="mob" style="display: non; flex: 1; display: none;"><a class="nav-link active" href="#"><span class="glyphicon glyphicon-menu-hamburger"></span></a></li>
 				<li id="second_ul">
 					<ul class="list-inline nav">
 						<li style="flex: 1;"><h4><a class="nav-link active" href="/">Home</a></h4></li>
