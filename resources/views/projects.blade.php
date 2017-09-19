@@ -1,15 +1,16 @@
 @extends('layouts.master')
 
 @section('content')
-  <div class="row container">
+  <div class="container">
     <!--INCLUDE SIDEBAR HERE -->
+     <div class="row topspace">
     <div class="col-sm-9 kk">
         <!--ABOUT BEGINS HERE -->
         <div class="container-fluid" style="background:#FAFAFA;">
              <div class="row">
-             <h4 class="text-center" style="text-decoration: underline;" >Runor Adjekpiyede's Projects</h4>
+             <h4 class="text-center" style="text-decoration: underline;" >About Me</h4>
                 <img src="{{ asset('man.png') }}" class="oval">
-                <p class="lead">I am a full stack developer who builds and designs software and modern day responsive websites. I am currently the lead developer at Teamin working on TheInnovestors. <br> Some of my coding languages are (but not limited to) HTML5, CSS3/SASS, PHP, Laravel, Javascript, Python, Jquery, VueJs, AngularJs, Git, and <a href="#others" style="color: gray; cursor: pointer;">several</a> others :-).</p>
+                <p class="lead">I am a full stack developer who builds, designs software and modern day responsive websites. In my spare time I do watch soccer, series (GOT), news and engaging in tech meetups.<br> Some of my coding languages are (but not limited to) HTML5, CSS3/SASS, PHP, Laravel, Javascript, Python, Jquery, VueJs, AngularJs, Git, and <a href="#others" style="color: gray; cursor: pointer; text-decoration: underline;">several</a> others :-).</p>
              </div>
          </div>
         <!--ABOUT ENDS HERE -->
@@ -18,62 +19,67 @@
         <h3 style="text-decoration: underline;">My Projects</h3>
         <ul class="list-unstyled">
             <li>
-                <h5>- <a href="https://salesnaija.com">SalesNaija -  A website selling IT products.</a></h5>
+                <h5>- <a href="https://salesnaija.com" target="blank">SalesNaija -  A website selling IT products.</a></h5>
                 <div class="row">
                     <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6" style="padding: 10px 40px 0px 40px;">
-                       <img src="{{ asset('showcase/3.png') }}"> 
+                       <img src="{{ asset('showcase/sales1.png') }}" style="max-height: 200px;"> 
                     </div>
                     <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6" style="padding: 10px 40px 0px 40px;">
-                       <img src="{{ asset('showcase/2.png') }}"> 
+                       <img src="{{ asset('showcase/sales2.png') }}" style="max-height: 200px;"> 
                     </div>
                 </div>
             </li> 
+            <hr>
             <li>
                 <h5>- InstantPay -  A demo ecommerce website for women's fashion.</h5>
                 <div class="row">
                     <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6" style="padding: 10px 40px 0px 40px;">
-                       <img src="{{ asset('showcase/4.png') }}"> 
+                       <img src="{{ asset('showcase/shopping2.png') }}" style="max-height: 200px;"> 
                     </div>
                     <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6" style="padding: 10px 40px 0px 40px;">
-                       <img src="{{ asset('showcase/2.png') }}"> 
+                       <img src="{{ asset('showcase/shopping1.png') }}" style="max-height: 200px;"> 
                     </div>
                 </div>
             </li>
+            <hr>
             <li>
-            <h5>- <a href="">Product finder website integrated with machine learning (natural language communication).</a></h5>
+            <h5>- <a href="http://elis-demo.ml" target="blank">Chatbot using natural language communication to provide information.</a></h5>
             <div class="row">
                 <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6" style="padding: 10px 40px 0px 40px;">
-                   <img src="{{ asset('showcase/5.png') }}"> 
+                   <img src="{{ asset('showcase/5.png') }}" style="max-height: 200px;"> 
                 </div>
             </div>
             </li>
+            <hr>
             <li>
-            <h5>- <a href="">Student's Alumni website.</a></h5>
+            <h5>- <a href="https://www.metallidurans15.com" target="blank">Student's Alumni website.</a></h5>
              <div class="row">
                     <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6" style="padding: 10px 40px 0px 40px;">
-                       <img src="{{ asset('showcase/1.png') }}"> 
+                       <img src="{{ asset('showcase/1.png') }}" style="max-height: 200px;"> 
                     </div>
                     <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6" style="padding: 10px 40px 0px 40px;">
-                       <img src="{{ asset('showcase/1.png') }}"> 
+                       <img src="{{ asset('showcase/1.png') }}" style="max-height: 200px;"> 
                     </div>
                 </div>
             </li>
+            <hr>
             <li>
-            <h5>- <a href="">TheInnovestors - connecting innovators with investors</a></h5>
+            <h5>- <a href="#">TheInnovestors - connecting innovators with investors</a></h5>
              <div class="row">
                     <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6" style="padding: 10px 40px 0px 40px;">
-                       <img src="{{ asset('showcase/1.png') }}"> 
+                       <img src="{{ asset('showcase/theinnovestors1.png') }}" style="max-height: 200px;"> 
                     </div>
                     <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6" style="padding: 10px 40px 0px 40px;">
-                       <img src="{{ asset('showcase/1.png') }}"> 
+                       <img src="{{ asset('showcase/theinnovestors2.png') }}" style="max-height: 200px;"> 
                     </div>
                 </div>
             </li>
-            <li><h5>- <a href="">Website blocker application.</a></h5></li>
-            <li><h5>- <a href="">A web mapping application.</a></h5></li>
+            <hr id="others">
+            <li><h5>- <a href="#">Website blocker application.</a></h5></li>
+            <li><h5>- <a href="https://github.com/kampkelly/webmap" target="blank">A web mapping application.</a></h5></li>
 
-        </ul>
-        <div id="others">
+        </ul><br>
+        <div>
             <h5>More extensive list of my programming skills</h5>
             <ul class="list-inline skills">
                 <li>HTML5</li>
@@ -101,5 +107,6 @@
      @include('../partials/newright-sidebar')
      
 
+</div>
 </div>
 @endsection

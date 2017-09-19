@@ -1,8 +1,9 @@
 @extends('layouts.master')
 
 @section('content')
-  <div class="row container">
+  <div class="container">
     <!--INCLUDE SIDEBAR HERE -->
+  <div class="row topspace">
     <div class="col-sm-9">
         <div class="contaier-fluid">
             <h2 class="text-center" style="color: grey;">Blog Posts</h2>
@@ -33,5 +34,6 @@
     </div>
      @include('../partials/right-sidebar')
 
+</div>
 </div>
 @endsection

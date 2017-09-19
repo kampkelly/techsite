@@ -1,12 +1,13 @@
 @extends('layouts.master')
 
 @section('content')
-  <div class="row container">
+  <div class="container" style="margn-left: 0px; margi-right: 0px;">
     <!--INCLUDE SIDEBAR HERE -->
-    <div class="col-sm-9 kk">
+ <div class="row topspace">
+    <div class="col-sm-9">
         <section class="" style="padding: 0px 20px 0px 20px;">
-            <h3 style="color: #96653b">Hey, I'm Runor  Adjekpiyede, <span style="font-size: 70%; ">Freelancer, Full Stack Developer</span> <span style="font-size: 70%;">and I</span> build<br> <span style="color: #286090;"> beautiful websites.</span> <a href="#" style="font-size: 50%; text-decoration: underline;"><br>More about me...</a> </h3>
-            <h4 class="text-center text-info">A Quick Look</h4>
+            <h1 style="color: #96653b; text-transform: uppercase; font-weight: 600;" class="hide-smartphone">Hey, I'm Runor  Adjekpiyede, <span style="font-size: 70%; ">Freelancer, Full Stack Developer</span> <span style="font-size: 70%;">and I  build</span> <span style="color: #286090;"> web apps.</span> <a href="/projects" style="font-size: 40%; font-weight: 500; text-decoration: underline; text-transform: capitalize;">More about me..</a> </h1>
+            <h3 style="color: #96653b; text-transform: uppercase; font-weight: 600;" class="show-only-smartphone">Hey, I'm Runor  Adjekpiyede, <span style="font-size: 70%; ">Freelancer, Full Stack Developer</span> <span style="font-size: 70%;">and I</span> build<br> <span style="color: #286090;"> web apps.</span> <a href="/projects" style="font-size: 50%; font-weight: 500; text-decoration: underline; text-transform: capitalize;">More about me..</a> </h3>
             <div class="row" style="background:#337AB7; padding: 10px; border: 1px #337AB7; border-radius: 4px; display: none;">
                 <div class="col-xs-6 col-sm-6 col-md-6 col-lg-3">
                     <img src="{{ asset('showcase/1.png') }}">
@@ -21,13 +22,28 @@
                     <img src="{{ asset('showcase/1.png') }}">
                 </div>
             </div>
-            <img src="{{ asset('showcase/un.png') }}">
+            <div class="row">
+                <div class="col-xs-12 col-sm-7 col-md-7 col-lg-7">
+                    <h4 class="text-center text-info">A Quick Look</h4>
+                    <img src="{{ asset('showcase/quicklook1.png') }}">
+                    <div class="text-center" style="margin-top: 20px;">
+                        <a href="/contact" class="btn btn-success btn-block" style="backgroun-color: #cb9126;">Contact Me</a>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-5 col-md-5 col-lg-5 hide-smartphone hide-tablet hide-mini-laptop hide-desktop">
+                    <h5 class="text-centr text-warning" style="text-decoration: underline;">See what my customers say:</h5>
+                    <q>Believe in yourself, there is no limit to what you can achieve!</q> <span class="text-muted">- James</span><br><br>
+                    <q>Believe in yourself, there is no limit to what you can achieve!</q> <span class="text-muted">- James</span><br><br>
+                    <q>Believe in yourself, there is no limit to what you can achieve!</q> <span class="text-muted">- James</span>
+                </div>
+            </div>
+            
             <div style="height: 10px;"></div>
-            <div class="text-center">
-                <a href="#" class="btn btn-info btn-block" style="backgroun-color: #cb9126;">Hire Me</a>
+            <div class="text-center hide-smartphone hide-tablet hide-mini-laptop hide-desktop" style="margin-top: 20px;">
+                <a href="/contact" class="btn btn-success btn-blck" style="backgroun-color: #cb9126; width: 50%;">Contact Me</a>
             </div>
         </section>
-        <div style="height: 10px;"></div>
+        <div style="height: 7px;"></div>
         <h4 class="text-center">My Posts</h4>
         <div class="row">
             @foreach($posts as $post)
@@ -56,5 +72,6 @@
      @include('../partials/newright-sidebar')
      
 
+</div>
 </div>
 @endsection

@@ -62,9 +62,7 @@
             @endforeach
             <!--ARCHIVE-->
             <!--LINKS-->
-    	<h4 class="text-center">Links</h4>
-        <ul class="list-unstyled">
-            <li><a href="/admin">Login</a></li>
+    	
             <!--LINKS-->
     </div>
 </div>

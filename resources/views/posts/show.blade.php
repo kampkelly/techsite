@@ -1,8 +1,9 @@
 @extends('layouts.master')
 
 @section('content')
-  <div class="row container">
+  <div class="container">
     <!--INCLUDE SIDEBAR HERE -->
+    <div class="row topspace">
     <div class="col-sm-9">
         <div class="contaier-fluid">
 			@include('../partials/errors')
@@ -97,5 +98,6 @@
     <!-- Go to www.addthis.com/dashboard to customize your tools -->
     <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-590b6d62620c44d0"></script>
 
+</div>
 </div>
 @endsection

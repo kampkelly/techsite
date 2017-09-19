@@ -1,6 +1,6 @@
 $(document).ready(function () {
 	$(window).scroll(function () {
-		$('.kk').css("margin-top", "90px");
+		$('.topspace').css("margin-top", "90px");
 	});
 	$('body').css("position", "relative");
 //	$('header').css("position", "fixed");
@@ -70,7 +70,7 @@ $(document).ready(function () {
 		$('header').css("position", "fixed");
 		$('header').css("width", "100%");
 		//     $('header h3').css("visibility", "hidden");
-		$('header').css("z-index", "1");
+		$('header').css("z-index", "99");
 		//  $('.header_hei').css("margin-top", "60px");
 		//   $('#other_post').removeClass("other_post_right");
 		$('#other_post').addClass("other_post_rig");

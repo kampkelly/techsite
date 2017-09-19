@@ -1,6 +1,7 @@
 <style type="text/css">
 	header {
 		font-family: 'Crimson Text', serif;
+		z-index: 99;
 	}
 	header .nav {
 		display: flex;
@@ -36,27 +37,26 @@
 			<ul class="container list-inline nav top_ul" style="background-color: #FAFAFA; padding: 0px 0px 0px 0px;">
 			
 				<li >
-				<a href="/newhome" style="padding: 0px 0px 0px 0px;"><img src="{{ asset('newlogo.png') }}" style="height: 5em;"></a>
+				<a href="/" style="padding: 0px 0px 0px 0px;"><img src="{{ asset('newlogo.png') }}" style="height: 5em;"></a>
 				</li>
-				<li class="mob" style="display: non;"><a class="nav-link active" href="/posts">Posts</a></li>
-				<li class="mob" style="display: non;"><a class="nav-link active" href="/projects">Projects</a></li>
-				<li class="mob" style="display: non;"><a class="nav-link active" href="/contact">Contact</a></li>
-				<li class="mob" style="display: non;"><a class="nav-link active" href="#"><span class="glyphicon glyphicon-menu-hamburger"></span></a></li>
+				<li class="mob" style="display: non; flex: 1;"><a class="nav-link active" href="/blog">Posts</a></li>
+				<li class="mob" style="display: non; flex: 1;"><a class="nav-link active" href="/projects">Projects</a></li>
+				<li class="mob" style="display: non; flex: 1;"><a class="nav-link active" href="/contact">Contact</a></li>
+				<li class="mob" style="display: non; flex: 1;"><a class="nav-link active" href="#"><span class="glyphicon glyphicon-menu-hamburger"></span></a></li>
 				<li id="second_ul">
 					<ul class="list-inline nav">
-						<li><a class="nav-link active" href="/">Home</a></li>
-						<li> <a class="nav-link active" href="/posts">Site Posts</a></li>
+						<li style="flex: 1;"><h4><a class="nav-link active" href="/">Home</a></h4></li>
+						<li> <h4><a class="nav-link active" href="/blog">Blog</a></h4></li>
 						<li style="position: relative;">
-						<a class="drop-item" href="#">Computers/Windows <span class="glyphicon glyphicon-arrow-down"></span></a>
+						<h4><a class="drop-item" href="#" style="display: none;">Tags <span class="glyphicon glyphicon-arrow-down"></span></a></h4>
 						<ul style="position: absolute; display: block; background-color: #FAFAFA; width: 100%; display: none;" class="list-unstyled drop-ul row">
 							@foreach($categories as $category)
 								<li class="col-lg-6"><a href="#" class="nav-link">{{$category->name}}</a></li>
 							@endforeach
 						</ul>
 						</li>
-						<li><a class="dropdown-item" href="#">Tags <span class="glyphicon glyphicon-arrow-down"></span></a></li>
-						<li><a class="dropdown-item" href="#">My Work <span class="glyphicon glyphicon-arrow-down"></span></a></li>
-						<li><a class="dropdown-item" href="#">Contact</a></li>
+						<li style="flex: 1;"><h4><a class="dropdown-item" href="/projects">Projects</a></h4></li>
+						<li style="flex: 1;"><h4><a class="dropdown-item" href="/contact">Contact</a></h4></li>
 					</ul>
 				</li>
 			</ul>

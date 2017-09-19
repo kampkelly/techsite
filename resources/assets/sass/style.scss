@@ -9,6 +9,33 @@ $smartphone: "(min-width: 0px) and (max-width: 467px)";
 $tablet: "(min-width: 468px) and (max-width: 767px)";
 $mini-laptop: "(min-width: 768px) and (max-width: 991px)";
 $desktop: "(min-width: 992px)";
+//
+.show-only-smartphone {
+	@media (min-width: 468px) {
+		display: none;
+	}
+}
+.hide-smartphone {
+	@media (min-width: 0px) and (max-width: 467px) {
+		display: none;
+	}
+}
+.hide-tablet {
+	@media (min-width: 468px) and (max-width: 767px) {
+		display: none;
+	}
+}
+.hide-mini-laptop {
+	@media (min-width: 768px) and (max-width: 992px) {
+		display: none;
+	}
+}
+.hide-desktop {
+	@media (min-width: 992px) {
+		display: none;
+	}
+}
+//
 %spc {
 	line-height: $line-space;
 	text-align: justify;
@@ -31,18 +58,22 @@ $desktop: "(min-width: 992px)";
 }
 .mob {
 	@media (min-width: 768px) {
-		display: none;
+		display: none !important;
 	//	visibility: hidden;
 	}
 }
 //about
 .oval {
-  width: 30%;
-  height: 30%;
+  width: 20%;
+//  height: 30%;
   border-radius: 50%;
   float: left;
   shape-outside: ellipse();
   background-clip: content-box;
+  @media (min-width: 768px) {
+	width: 15%;
+  //	height: 15% !important;
+  }
 }
 .skills {
 	li {color: $side;}
@@ -288,7 +319,7 @@ p img {
 footer {
 	//font-family: 'Architects Daughter', cursive !important;
 	min-height: 160px;
-	background-color: $navbar;
+	background-color: #e9e9e9;
 	z-index: 4 !important;
 	* {
 		color: white;

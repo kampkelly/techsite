@@ -16,11 +16,12 @@ Route::get('/about', function () {
     return view::make('partials/about');
 }); */
 
-Route::get('/', 'PostController@homepage');
-Route::get('/newhome', 'PostController@home');
+Route::get('/', 'PostController@home');
+Route::get('/home', 'PostController@home');
 Route::get('/projects', 'HomeController@projects');
 Route::get('/contact', 'HomeController@contact');
-Route::get('/posts', 'PostController@index');
+Route::post('/contact', 'HomeController@sendcontact');
+Route::get('/blog', 'PostController@index');
 Route::get('/posts/new', 'PostController@create');
 Route::get('/post/{show}', 'PostController@show');
 Route::get('/post/edit/{edit}', 'PostController@edit');
