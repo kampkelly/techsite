@@ -9,7 +9,7 @@
         <div class="container-fluid" style="background:#FAFAFA;">
              <div class="row">
              <h4 class="text-center" style="text-decoration: underline;" >About Me</h4>
-                <img src="{{ asset('man.png') }}" class="oval">
+                <img src="{{ asset('me.jpg') }}" class="oval">
                 <p class="lead">I am a full stack developer who builds, designs software and modern day responsive websites. In my spare time I do watch soccer, series (GOT), news and engaging in tech meetups.<br> Some of my coding languages are (but not limited to) HTML5, CSS3/SASS, PHP, Laravel, Javascript, Python, Jquery, VueJs, AngularJs, Git, and <a href="#others" style="color: gray; cursor: pointer; text-decoration: underline;">several</a> others :-).</p>
              </div>
          </div>
