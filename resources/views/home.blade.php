@@ -25,7 +25,7 @@
             <div class="row">
                 <div class="col-xs-12 col-sm-7 col-md-7 col-lg-7">
                     <h4 class="text-center text-info">A Quick Look</h4>
-                    <img class="fancybo" src="{{ asset('showcase/quicklook1.png') }}" title="Quick look" style="cursor: zoom-in;">
+                    <img class="fancybox" src="{{ asset('showcase/quicklook1.png') }}" title="Quick look" style="cursor: zoom-in;">
                     <div class="text-center" style="margin-top: 20px;">
                         <a href="/contact" class="btn btn-success btn-block" style="backgroun-color: #cb9126;">Contact Me</a>
                     </div>
