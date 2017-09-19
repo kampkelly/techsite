@@ -57,11 +57,7 @@ Route::delete('/comment/{edit}', 'CommentController@destroy');
 
 Route::get('/posts/tags/{tag}', 'TagController@index');
 //Admin
-Route::get('/admin', 'PostController@admin');
-Route::get('/admin/panel', 'PostController@admpanel');
-Route::get('/admin/posts/panel', 'PostController@postspanel');
-Route::get('/admin/posts/published', 'PostController@publishedpanel');
-Route::get('/admin/posts/drafts', 'PostController@draftpanel');
+
 
 Route::get('/home', 'HomeController@index')->name('home');
 Route::any('/search', 'PostController@search');
@@ -78,17 +74,27 @@ Route::any('/search',function(){
 
 //AUTHENTICATION ROUTES
 #Auth::routes();
+$this->get('adminkkk/login', 'Auth\LoginController@showLoginForm')->name('login');
+  $this->post('login', 'Auth\LoginController@login');
+    $this->post('logout', 'Auth\LoginController@logout')->name('logout');
+Route::group(['middleware'=>'auth'], function () {
+  Route::get('/admin', 'PostController@admin');
+Route::get('/admin/panel', 'PostController@admpanel');
+Route::get('/admin/posts/panel', 'PostController@postspanel');
+Route::get('/admin/posts/published', 'PostController@publishedpanel');
+Route::get('/admin/posts/drafts', 'PostController@draftpanel');
 
-$this->get('admin/login', 'Auth\LoginController@showLoginForm')->name('login');
-$this->post('login', 'Auth\LoginController@login');
-$this->post('logout', 'Auth\LoginController@logout')->name('logout');
+  
 
-// Registration Routes...
-$this->get('admin/register', 'Auth\RegisterController@showRegistrationForm')->name('register');
-$this->post('register', 'Auth\RegisterController@register');
 
-// Password Reset Routes...
-$this->get('password/reset', 'Auth\ForgotPasswordController@showLinkRequestForm')->name('password.request');
-$this->post('password/email', 'Auth\ForgotPasswordController@sendResetLinkEmail')->name('password.email');
-$this->get('password/reset/{token}', 'Auth\ResetPasswordController@showResetForm')->name('password.reset');
-$this->post('password/reset', 'Auth\ResetPasswordController@reset');
+
+  // Registration Routes...
+  $this->get('admin/register', 'Auth\RegisterController@showRegistrationForm')->name('register');
+  $this->post('register', 'Auth\RegisterController@register');
+
+  // Password Reset Routes...
+  $this->get('password/reset', 'Auth\ForgotPasswordController@showLinkRequestForm')->name('password.request');
+  $this->post('password/email', 'Auth\ForgotPasswordController@sendResetLinkEmail')->name('password.email');
+  $this->get('password/reset/{token}', 'Auth\ResetPasswordController@showResetForm')->name('password.reset');
+  $this->post('password/reset', 'Auth\ResetPasswordController@reset');
+});

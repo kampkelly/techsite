@@ -21,6 +21,7 @@
 					</div>
 				</div>
 			@endforeach
+			<div style="height: 40px;"></div>
 			<div class="col-sm-12"> 
                @include('../partials/about')
             </div>
