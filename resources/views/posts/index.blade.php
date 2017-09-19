@@ -32,7 +32,7 @@
             <!--ABOUT ENDS HERE -->
         </div>
     </div>
-     @include('../partials/right-sidebar')
+     @include('../partials/newright-sidebar')
 
 </div>
 </div>

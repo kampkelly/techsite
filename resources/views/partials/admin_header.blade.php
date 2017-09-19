@@ -16,7 +16,7 @@
                             </li>
                             <li><a href="/contact">Contact Us</a>
                             </li>
-                            <li><a href="index.php">Admin Dashboard</a>
+                            <li><a href="admin/panel">Admin Dashboard</a>
                             </li>
 						
                         <!-- Authentication Links -->

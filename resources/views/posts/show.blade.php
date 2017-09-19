@@ -94,7 +94,7 @@
                  @include('../partials/about')
         </div>
     </div>
-     @include('../partials/right-sidebar')
+     @include('../partials/newright-sidebar')
     <!-- Go to www.addthis.com/dashboard to customize your tools -->
     <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-590b6d62620c44d0"></script>
 
