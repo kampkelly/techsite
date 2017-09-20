@@ -6,7 +6,7 @@
  <div class="row topspace">
     <div class="col-sm-9">
         <section class="" style="padding: 0px 20px 0px 20px;">
-            <h1 style="color: #96653b; text-transform: uppercase; font-weight: 600;" class="hide-smartphone">Hey, I'm Runor  Adjekpiyede, <span style="font-size: 70%; ">Freelancer, Full Stack Developer</span> <span style="font-size: 70%;">and I  build</span> <span style="color: #286090;"> web apps.</span> <a href="/projects" style="font-size: 40%; font-weight: 500; text-decoration: underline; text-transform: capitalize;">More about me..</a> </h1>
+            <h1 style="color: #96653b; text-transform: uppercase; font-weight: 600;" class="hide-smartphone">Hey, I'm Runor  Adjekpiyede, <span style="font-size: 70%; "><i style="display: none;">Freelancer,</i>a Full Stack Developer</span> <span style="font-size: 70%;">and I  build</span> <span style="color: #286090;"> web apps.</span> <a href="/projects" style="font-size: 40%; font-weight: 500; text-decoration: underline; text-transform: capitalize;">More about me..</a> </h1>
             <h3 style="color: #96653b; text-transform: uppercase; font-weight: 600;" class="show-only-smartphone">Hey, I'm Runor  Adjekpiyede, <span style="font-size: 70%; ">Freelancer, Full Stack Developer</span> <span style="font-size: 70%;">and I</span> build<br> <span style="color: #286090;"> web apps.</span> <a href="/projects" style="font-size: 50%; font-weight: 500; text-decoration: underline; text-transform: capitalize;">More about me..</a> </h3>
             <div class="row" style="background:#337AB7; padding: 10px; border: 1px #337AB7; border-radius: 4px; display: none;">
                 <div class="col-xs-6 col-sm-6 col-md-6 col-lg-3">
