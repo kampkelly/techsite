@@ -1,7 +1,7 @@
 @extends('layouts.master')
 
 @section('content')
-  <div class="container">
+  <div class="container showpostcontainer">
     <!--INCLUDE SIDEBAR HERE -->
     <div class="row topspace">
     <div class="col-sm-9">

@@ -7,9 +7,7 @@
                     <li><a href="/">Home</a></li>
                     <li><a href="/projects">My Projects</a></li>
                     <li><a href="/blog">Blog Posts</a></li>
-                    <li><a href="#">Contact</a></li>
-                    <li><a href="#">Privacy Policy</a></li>
-                    <li><a href="#">Terms Of Use</a></li>
+                    <li><a href="/contact">Contact</a></li>
                 </ul>
                 <ul class="pull-right" id="right" style="display:inline;">
                     <li style="display: none;"><a href="#" target="blank"><i class="fa fa-google" aria-hidden="true"></i></a></li>
