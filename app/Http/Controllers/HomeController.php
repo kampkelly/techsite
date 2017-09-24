@@ -45,7 +45,7 @@ class HomeController extends Controller
         $message = $request->contact_msg;
         $email_data = array(
           //   'recipient' => $user->user_email,
-             'recipient' => 'kampkellykeys@gmail.com',
+             'recipient' => 'support@theinnovestors.com',
              'subject' => 'New Email From Personal Site'
               );
                 $view_data = array(
