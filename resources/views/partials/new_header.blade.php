@@ -14,8 +14,8 @@
 		box-shadow: 0px 3px #ae7d21; 
 	}
 	header .nav li a {
-	/*	color: #96653B; */
-		color: white;
+		color: #96653B; 
+	/*	color: white; */
 	}
 	.drop-ul {
 		padding: 20px;
@@ -34,12 +34,12 @@
 	}
 	.mob a {color: #5A5950 !important;}
 </style>
-<header style="background:-webkit-linear-gradient(0deg, rgba(203,145,38,1) 0%, rgba(218,161,57,1) 25%, rgba(203,145,38,1) 50%, rgba(218,161,57,1) 75%, rgba(203,145,38,1) 100%); padding-bottom: 10px;">
+<header style="background: #FAFAFA; padding-bottom: 10px;">
 	<div style="display: none;">
 		<h3 class="text-center" style="margin-top: 0px; padding-top: 5px; color: #286090;">Runor's Blog</h3>
 	</div>		
 		
-			<ul class="container list-inline nav top_ul" style="background-color: -webkit-linear-gradient(0deg, rgba(203,145,38,1) 0%, rgba(218,161,57,1) 25%, rgba(203,145,38,1) 50%, rgba(218,161,57,1) 75%, rgba(203,145,38,1) 100%); padding: 0px 0px 0px 0px;">
+			<ul class="container list-inline nav top_ul" style="background-color: #FAFAFA; padding: 0px 0px 0px 0px;">
 			
 				<li >
 				<a href="/" style="padding: 0px 0px 0px 0px;"><img src="{{ asset('newlogo.png') }}" style="height: 5em;"></a>

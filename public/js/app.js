@@ -31664,7 +31664,7 @@ var Component = __webpack_require__(35)(
   /* cssModules */
   null
 )
-Component.options.__file = "/Users/Runor/larasites/pqtech/resources/assets/js/components/Example.vue"
+Component.options.__file = "/Users/Runor/larasites/newpqtech/resources/assets/js/components/Example.vue"
 if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key !== "__esModule"})) {console.error("named exports are not supported in *.vue files.")}
 if (Component.options.functional) {console.error("[vue-loader] Example.vue: functional components are not supported with templates, they should use render functions.")}
 
@@ -31675,9 +31675,9 @@ if (false) {(function () {
   if (!hotAPI.compatible) return
   module.hot.accept()
   if (!module.hot.data) {
-    hotAPI.createRecord("data-v-abf7e862", Component.options)
+    hotAPI.createRecord("data-v-e21f074a", Component.options)
   } else {
-    hotAPI.reload("data-v-abf7e862", Component.options)
+    hotAPI.reload("data-v-e21f074a", Component.options)
   }
 })()}
 
@@ -31766,7 +31766,7 @@ module.exports.render._withStripped = true
 if (false) {
   module.hot.accept()
   if (module.hot.data) {
-     require("vue-hot-reload-api").rerender("data-v-abf7e862", module.exports)
+     require("vue-hot-reload-api").rerender("data-v-e21f074a", module.exports)
   }
 }
 

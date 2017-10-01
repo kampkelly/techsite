@@ -3,7 +3,7 @@
     <section class="container">
         <div class="row">
             <div class="col-sm-8 col-xs-12" id="left" style="padding-right:0px;">
-                <ul class="pull-left">
+                <ul class="pull-left list-inline">
                     <li><a href="/">Home</a></li>
                     <li><a href="/projects">My Projects</a></li>
                     <li><a href="/blog">Blog Posts</a></li>
@@ -17,10 +17,7 @@
                 </ul>
             </div>
             <div class="col-sm-4 col-xs-12" style="padding-left:53px;">
-                <p class="small"><b style="font-size:110%">Contact</b>: Email: kampkellykeys@gmail.com<br>Mobile: +2348157657730</p>
-                <a href="#scroll_top" style="color:#96653b !important; display: none;">Top
-                    <span class="glyphicon glyphicon-arrow-up" style="color:#96653b !important;"></span>
-                </a>
+                <p class="small"><b style="font-size:110%">Contact</b>: Email: kampkellykeys@gmail.com Mobile: +2348157657730</p>
                 <span class="small text-info" style="color: #CD9126;">runoradjekpiyede &copy 2017</span>
             </div>
         </div>

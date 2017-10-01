@@ -88,7 +88,7 @@ class PostController extends Controller
       $topposts = Post::where('status', 'Sticky')->orderBy('id', 'desc')->take(2)->get();  //eloquent method
    #   $posts = Post::all()->paginate(15);
 	#	$posts = Post::orderBy('id', 'DESC')->simplePaginate(1);
-        $posts = DB::table('posts')->where('status', 'Published')->orderBy('id', 'desc')->simplePaginate(6);  //DB method
+        $posts = DB::table('posts')->where('status', 'Published')->orderBy('id', 'desc')->simplePaginate(3);  //DB method
       $categories = Category::all();
 		
         return view('home', compact('posts', 'categories', 'topposts'));

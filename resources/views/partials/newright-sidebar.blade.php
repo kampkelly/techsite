@@ -1,7 +1,7 @@
 <div class="col-sm-3 side_bar" ng-style="{\'background-color\': color}">
 <div style="height: 20px;"></div>
     <div>
-    <form action="/search" method="POST" role="search">
+    <form action="/search" method="POST" role="search" style="display: none;">
         {{ csrf_field() }}
         <div class="input-group">
             <input type="text" class="form-control" name="q"
@@ -14,7 +14,7 @@
     </form>
 
         <!--RECENT POSTS BEGINS-->
-        <h4 class="text-center">Recent Posts</h4>
+        <h4 class="text-center">Recent Articles</h4>
         <ul class="list-group">
            @foreach($sideposts as $sidepost)
                 <li class="list-group-item"><a>{{$sidepost->title}}</a></li>
@@ -22,6 +22,7 @@
         </ul>
         <!--RECENT POSTS ENDS-->
         <!--CATEGORIES BEGINS-->
+        <div style="display: none;">
         <h4 class="text-center">Categories</h4>
         <form action="/cat" method="POST" role="form">  
             {{csrf_field()}}      
@@ -34,10 +35,13 @@
             </div>
             <button type="submit" class="btn btn-primary btn-block">Go</button>
         </form>
+        </div>
+        <div style="display: none;">
         <h4 class="text-center">Tags</h4>
         @foreach($tags as $tag)
 			<a href="/posts/tags/{{$tag}}">{{$tag}}</a> <br>
 		@endforeach
+        </div>
        
         <!--ARCHIVE-->
         <h4 class="text-center">Archives</h4>

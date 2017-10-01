@@ -6,29 +6,23 @@
  <div class="row topspace">
     <div class="col-sm-9">
         <section class="" style="padding: 0px 20px 0px 20px;">
-            <h1 style="color: #96653b; text-transform: uppercase; font-weight: 600;" class="hide-smartphone">Hey, I'm Runor  Adjekpiyede, <span style="font-size: 70%; "><i style="display: none;">Freelancer,</i>a Full Stack Developer</span> <span style="font-size: 70%;">and I  build</span> <span style="color: #286090;"> web apps.</span> <a href="/projects" style="font-size: 40%; font-weight: 500; text-decoration: underline; text-transform: capitalize;">More about me..</a> </h1>
-            <h3 style="color: #96653b; text-transform: uppercase; font-weight: 600;" class="show-only-smartphone">Hey, I'm Runor  Adjekpiyede, <span style="font-size: 70%; ">Freelancer, Full Stack Developer</span> <span style="font-size: 70%;">and I</span> build<br> <span style="color: #286090;"> web apps.</span> <a href="/projects" style="font-size: 50%; font-weight: 500; text-decoration: underline; text-transform: capitalize;">More about me..</a> </h3>
-            <div class="row" style="background:#337AB7; padding: 10px; border: 1px #337AB7; border-radius: 4px; display: none;">
-                <div class="col-xs-6 col-sm-6 col-md-6 col-lg-3">
-                    <img src="{{ asset('showcase/1.png') }}">
-                </div> 
-                <div class="col-xs-6 col-sm-6 col-md-6 col-lg-3">
-                    <img src="{{ asset('showcase/2.png') }}">
-                </div>
-                <div class="col-xs-6 col-sm-6 col-md-6 col-lg-3">
-                    <img src="{{ asset('showcase/4.png') }}">
-                </div>
-                <div class="col-xs-6 col-sm-6 col-md-6 col-lg-3">
-                    <img src="{{ asset('showcase/1.png') }}">
-                </div>
-            </div>
+            <h1 style="color: #96653b; text-transform: uppercase; font-weight: 600;" class="hide-smartphone">Hey, I'm Runor  Adjekpiyede, <span style="font-size: 70%; ">a Full Stack Developer</span> <span style="font-size: 70%;">and I  build</span> <span style="color: #286090;"> web apps.</span> </h1>
+            <h3 style="color: #96653b; text-transform: uppercase; font-weight: 600;" class="show-only-smartphone">Hey, I'm Runor  Adjekpiyede, <span style="font-size: 70%; ">a Full Stack Developer</span> <span style="font-size: 70%;">and I build</span> <br> <span style="color: #286090;"> web apps.</span> </h3>
             <div class="row">
-                <div class="col-xs-12 col-sm-7 col-md-7 col-lg-7">
+                <div class="col-xs-12 col-sm-7 col-md-7 col-lg-7" style="display: none;">
                     <h4 class="text-center text-info">A Quick Look</h4>
                     <img class="fancybox" src="{{ asset('showcase/quicklook1.png') }}" title="Quick look" style="cursor: zoom-in;">
                     <div class="text-center" style="margin-top: 20px;">
                         <a href="/contact" class="btn btn-success btn-block" style="backgroun-color: #cb9126;">Contact Me</a>
                     </div>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-10 col-lg-7">
+                   <h4 class="text-justif lea" style="font-weight: 300;"><img src="{{ asset('showcase/fet1.png') }}" class="rect hidden-lg">I specialize in web development, responsive design, HTML5, CSS3/SASS, Bootstrap, Javascript, PHP, Laravel.<br> I also make use of <a href="#languages" onclick="mystuff()">these</a>. <br><br>I am currently a freelancer but interested in working with a dynamic and growth oriented organization.<br> While away from these coding life, I do enjoy football, writing tutorials and getting acquainted.<br><br>
+                If you want to know more about me, my work or work together, feel free to contact me on hola@runoradjekpiyede.me or</h4>
+                <a href="/contact" class="btn btn-info btn-block" style="backgroun-color: #cb9126;">Contact Me</a>
+                </div>
+                <div class="col-xs-12 col-sm-5 col-md-5 col-lg-5 hidden-xs hidden-sm hidden-md">
+                    <img class="fancybo" src="{{ asset('showcase/fet1.png') }}" class="rect" style="height: 200px;">
                 </div>
                 <div class="col-xs-12 col-sm-5 col-md-5 col-lg-5 hide-smartphone hide-tablet hide-mini-laptop hide-desktop">
                     <h5 class="text-centr text-warning" style="text-decoration: underline;">See what my customers say:</h5>
@@ -43,8 +37,9 @@
                 <a href="/contact" class="btn btn-success btn-blck" style="backgroun-color: #cb9126; width: 50%;">Contact Me</a>
             </div>
         </section>
+        <div style="display: none;">
         <div style="height: 7px;"></div>
-        <h4 class="text-center">My Posts</h4>
+        <h4 class="text-center">My Articles</h4>
         <div class="row">
             @foreach($posts as $post)
                 <div href="post/{{$post->id}}" class="other_post col-sm-6 col-md-4 pan_pad">
@@ -67,8 +62,8 @@
 
 
             <!--ABOUT BEGINS HERE -->
-            @include('partials/about')
             <!--ABOUT ENDS HERE -->
+        </div>
 
     </div>
      @include('../partials/newright-sidebar')
@@ -76,4 +71,35 @@
 
 </div>
 </div>
+<script type="text/javascript">
+    function mystuff() {
+           swal({
+  title: '<h2 style="color:#1A3A55;">My Skills!</h2>',
+  html: '<ul class="list-inline skills">\
+                <li>HTML5</li>\
+                <li>CSS3/SASS</li>\
+                <li>Javascript</li>\
+                <li>Jquery</li>\
+                <li>Bootstrap</li>\
+                <li>MaterializeCss</li>\
+                <li>AngularJs</li>\
+                <li>VueJs</li>\
+                <li>PHP</li>\
+                <li>Laravel</li>\
+                <li>Intermediate Python</li>\
+                <li>Basic Ruby on Rails</li>\
+                <li>Git</li>\
+                <li>Website Deployments</li>\
+                <li>Cordova</li>\
+                <li>Wordpress</li>\
+                <li>Wireframes</li>\
+                <li>Responsive design</li>\
+            </ul>',
+  confirmButtonText: 'Close',
+  showCloseButton: true,
+  confirmButtonColor: '#95653F'
+})
+
+        }
+</script>
 @endsection
