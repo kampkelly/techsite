@@ -35,7 +35,13 @@ class CommentController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        Comment::create([
+            'comment' => request('comment'),
+            'name' => request('comment_name'),
+            'post_id' => request('post_id')
+        ]);
+        session()->flash('message', 'Commented successfully!');
+        return redirect()->back();
     }
 
     /**

@@ -199,9 +199,11 @@ class PostController extends Controller
     public function show($id)
     {
         //
-		$post = Post::find($id);
+        $post = Post::find($id);
+		$comments = $post->comments()->orderBy('id', 'desc')->get();
+        $countcomments = count($comments);
       //	$categories = Category::all();
-        return view('posts.show', compact('post'));
+        return view('posts.show', compact('post', 'comments', 'countcomments'));
     }
 
     /**

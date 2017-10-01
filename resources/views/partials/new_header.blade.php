@@ -44,14 +44,14 @@
 				<li >
 				<a href="/" style="padding: 0px 0px 0px 0px;"><img src="{{ asset('newlogo.png') }}" style="height: 5em;"></a>
 				</li>
-				<li class="mob" style="display: non; flex: 1;"><a class="nav-link active" href="/blog">Posts</a></li>
+				<li class="mob" style="display: non; flex: 1;"><a class="nav-link active" href="/blog">Articles</a></li>
 				<li class="mob" style="display: non; flex: 1;"><a class="nav-link active" href="/projects">Projects</a></li>
 				<li class="mob" style="display: non; flex: 1;"><a class="nav-link active" href="/contact">Contact</a></li>
 				<li class="mob" style="display: non; flex: 1; display: none;"><a class="nav-link active" href="#"><span class="glyphicon glyphicon-menu-hamburger"></span></a></li>
 				<li id="second_ul">
 					<ul class="list-inline nav">
 						<li><h4><a class="nav-link active" href="/">Home</a></h4></li>
-						<li> <h4><a class="nav-link active" href="/blog">Blog</a></h4></li>
+						<li> <h4><a class="nav-link active" href="/blog">Articles</a></h4></li>
 						<li style="position: relative;">
 						<h4><a class="drop-item" href="#" style="display: none;">Tags <span class="glyphicon glyphicon-arrow-down"></span></a></h4>
 						<ul style="position: absolute; display: block; background-color: #FAFAFA; width: 100%; display: none;" class="list-unstyled drop-ul row">

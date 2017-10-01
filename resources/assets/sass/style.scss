@@ -70,6 +70,7 @@ $desktop: "(min-width: 992px)";
   float: left;
   shape-outside: ellipse();
   background-clip: content-box;
+  padding: 5px;
   @media (min-width: 768px) {
 	width: 15%;
   //	height: 15% !important;
@@ -176,16 +177,45 @@ body {
 	color: white !important;
 }
 .pan_pad {
-	@media #{$smartphone} {
-		max-height: 450px;
+	.article_title {
+		@media #{$smartphone} {
+			height: 5em;
+		}
+		@media #{$mini-laptop} {
+			height: 6em;
+		}
+		@media #{$desktop} {
+			height: 6em;
+		}
 	}
-	@media #{$tablet} {
-		//height: 650px;
-		height: 560px;
+	.article_image {
+		@media #{$smartphone} {
+			height: 12em;
+		}
+		@media #{$mini-laptop} {
+			height: 10em;
+		}
+		@media #{$desktop} {
+			height: 9em;
+		}
+	}
+	.article_description {
+		@media #{$smartphone} {
+			height: 8em;
+		}
+		@media #{$tablet} {
+			height: 4em;
+		}
+		@media #{$mini-laptop} {
+			height: 7em;
+		}
+		@media #{$desktop} {
+			height: 9em;
+		}
 	}
 	h4 a {
-		//color: #171616 !important;
 		color: $side !important;
+		&:hover {text-decoration: none !important;}
 	}
 	.panel-headin {
 		a {
@@ -203,8 +233,6 @@ body {
 	}
 	#pan_head {
 		background-color: #F8F4F4;
-	//	border: 1px solid black;
-	//	border-radius: 2%;
 		h4,
 		span {
 			color: white;
@@ -213,7 +241,16 @@ body {
 	.panel {
 		box-shadow: 0.4px 0.4px 0.4px 1px #888888;
 	}
-//	border: 3px solid #f7f7f7;
+}
+.showarticlecontainer {
+	@media #{$smartphone} {
+		padding: 0px !important;
+	}
+	.article_image {
+		@media #{$desktop} {
+			height: 25em;
+		}
+	}
 }
 
 .other_post_right {
@@ -255,6 +292,11 @@ body {
 	border-color: #f3f1ed !important;
 	a {
 		color: $side !important;
+		text-decoration: none;
+		&:hover {
+			color: $panel !important;
+			transition: 0.7s;
+		}
 	}
 	h4 {
 		color: $panel;
@@ -480,4 +522,12 @@ footer {
 
 .yeye_footer {
 	padding-right: 120px;
+}
+.articlescontainer {
+	
+}
+.showarticlecontainer {
+	.article_description {
+		color: red !important;
+	}
 }

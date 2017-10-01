@@ -55,7 +55,7 @@ Route::get('/category/edit/{edit}', 'CategoryController@edit');
 Route::put('/category/{edit}', 'CategoryController@update');
 Route::delete('/category/{edit}', 'CategoryController@destroy');
 
-Route::delete('/comment/{edit}', 'CommentController@destroy');
+Route::delete('/comment/{delete}', 'CommentController@destroy');
 
 Route::get('/posts/tags/{tag}', 'TagController@index');
 //Admin

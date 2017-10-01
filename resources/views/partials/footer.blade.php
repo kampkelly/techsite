@@ -6,7 +6,7 @@
                 <ul class="pull-left list-inline">
                     <li><a href="/">Home</a></li>
                     <li><a href="/projects">My Projects</a></li>
-                    <li><a href="/blog">Blog Posts</a></li>
+                    <li><a href="/blog">Articles</a></li>
                     <li><a href="/contact">Contact</a></li>
                 </ul>
                 <ul class="pull-right" id="right" style="display:inline;">

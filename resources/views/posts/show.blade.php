@@ -1,7 +1,7 @@
 @extends('layouts.master')
 
 @section('content')
-  <div class="container showpostcontainer">
+  <div class="container showarticlecontainer">
     <!--INCLUDE SIDEBAR HERE -->
     <div class="row topspace">
     <div class="col-sm-9">
@@ -27,7 +27,7 @@
                                     <div class="col-sm-1 col-xs-12"></div>
                                     <div class="col-sm-10 col-xs-12">
                                        <!--  <img src="{{ asset('uploads/'.$post->image) }}" width="100%" height="40%"> -->
-                                         <img src="{{ asset('uploads/'.$post->image) }}" class="img-responsive img-rounded">
+                                         <img src="{{ asset('uploads/'.$post->image) }}" class="img-responsive img-rounded article_image">
                                     </div>
                                     <div class="col-sm-1 col-xs-12"></div>
                                 </div>
@@ -36,7 +36,7 @@
                              
                             <div style="height:25px"></div>
                             <section>
-                                <p class="spc">{!! $post->body !!}</p>
+                                <p class="article_description">{!! $post->body !!}</p>
                             </section>
                         </div>
                     </div>
@@ -53,7 +53,7 @@
                     </div>
 					<div class="form-group">
 							{{ Form::label('comment', 'Comment') }}
-							{{ Form::textarea('comment', null, ['class' => 'form-control', 'placeholder' => 'Type Comment', 'rows' => 5]) }}
+							{{ Form::textarea('comment', null, ['class' => 'form-control', 'placeholder' => 'Type Comment', 'rows' => 2, 'resize' => 'none']) }}
 					</div>
 					{{ Form::hidden('post_id', $post->id) }}
 					<div class="form-group">
@@ -61,10 +61,13 @@
 					</div>
 						{{ Form::close() }}
 				</div>
-				@foreach($post->comments as $comment)			
+                <h5 style="margin-left: 20px; text-decoration: underline;">Comments</h5>
+                @if($countcomments >= 1)
+				@foreach($comments as $comment)			
 					<div class="" style="margin-left: 10px;">
-                                <h6>{{$comment->name}}</h6>
-								<h5>{{$comment->comment}}</h5>
+                                <p><span class="small">Name:</span> <span style="padding-left: 10%;">{{$comment->name}}</span>
+                                    <span class="pull-right small" style="color: #96653b;"> {{$comment->created_at->diffForHumans()}}</span> </p>
+								<p><span class="small">Comment:</span> <span style="padding-left: 5%;">{{$comment->comment}}</span></p>
                                 @if (Auth::user())
 								{{ Form::open(array('url' => '/comment/'.$comment->id, 'method' => 'DELETE')) }}
 								{{ Form::hidden('post_id', $post->id) }}
@@ -73,6 +76,10 @@
 								@endif
 					</div><br>
 				@endforeach
+                @else
+                    <p class="text-center">No comments!</p>
+                @endif
+                <hr>
                 <!-- begin wwww.htmlcommentbox.com 
                 <div id="HCB_comment_box"><a href="http://www.htmlcommentbox.com">Widget</a> is loading comments...</div>
                 <link rel="stylesheet" type="text/css" href="//www.htmlcommentbox.com/static/skins/bootstrap/twitter-bootstrap.css?v=0" />

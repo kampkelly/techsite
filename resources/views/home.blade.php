@@ -72,34 +72,6 @@
 </div>
 </div>
 <script type="text/javascript">
-    function mystuff() {
-           swal({
-  title: '<h2 style="color:#1A3A55;">My Skills!</h2>',
-  html: '<ul class="list-inline skills">\
-                <li>HTML5</li>\
-                <li>CSS3/SASS</li>\
-                <li>Javascript</li>\
-                <li>Jquery</li>\
-                <li>Bootstrap</li>\
-                <li>MaterializeCss</li>\
-                <li>AngularJs</li>\
-                <li>VueJs</li>\
-                <li>PHP</li>\
-                <li>Laravel</li>\
-                <li>Intermediate Python</li>\
-                <li>Basic Ruby on Rails</li>\
-                <li>Git</li>\
-                <li>Website Deployments</li>\
-                <li>Cordova</li>\
-                <li>Wordpress</li>\
-                <li>Wireframes</li>\
-                <li>Responsive design</li>\
-            </ul>',
-  confirmButtonText: 'Close',
-  showCloseButton: true,
-  confirmButtonColor: '#95653F'
-})
-
-        }
+    
 </script>
 @endsection
