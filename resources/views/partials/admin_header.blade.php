@@ -7,16 +7,16 @@
                 </div>
                 <div class="collapse navbar-collapse navbar-menubuilder">
                     <ul class="nav navbar-nav navbar-right">
-                        <li><a href="index.php">Home</a>
+                        <li><a href="/">Home</a>
                         </li>
-                        <li><a href="all_posts.php">Blog Posts</a>
+                        <li><a href="/blog">Blog Posts</a>
                         </li>
 						<li><a href="category.php?category_id=1">Job Tests</a></li>
                             <li><a href="categories.php">Categories</a>
                             </li>
                             <li><a href="/contact">Contact Us</a>
                             </li>
-                            <li><a href="admin/panel">Admin Dashboard</a>
+                            <li><a href="/admin">Admin Dashboard</a>
                             </li>
 						
                         <!-- Authentication Links -->
