@@ -17,7 +17,7 @@
                 </ul>
             </div>
             <div class="col-sm-4 col-xs-12" style="padding-left:53px;">
-                <p class="small"><b style="font-size:110%">Contact</b>: Email: kampkellykeys@gmail.com Mobile: +2348157657730</p>
+                <p class="small">Feel free to contact me on email: kampkellykeys@gmail.com mobile: +2348157657730</p>
                 <span class="small text-info" style="color: #CD9126;">runoradjekpiyede &copy 2017</span>
             </div>
         </div>
