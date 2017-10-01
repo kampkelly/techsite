@@ -171,7 +171,14 @@ class PostController extends Controller
             $t = date("i-s");
             $newfilename = md5($file_basename) . $t . $file_ext;
             $file->move('uploads', $newfilename);
-        }
+        } 
+        //slug starts
+        $slug_title = preg_replace('/[^A-Za-z0-9\- ]/', '', request('post_title'));
+        $slug_title = strtolower($slug_title);
+        $slug_date = date("Y-m-d");
+        $slug_combine = $slug_title.' '.$slug_date;
+        $slug_format = strtr($slug_combine, ' ', '-');
+        $slug = $slug_format;  //slug ends
         //
          Post::create([
             'title' => request('post_title'),
@@ -182,9 +189,12 @@ class PostController extends Controller
             'category_id' => request('post_category'),
             'author_name' => 'g',
             'status' => request('status'),
+            'slug' => $slug,
             'tags' => 'g'
         ]);
-        return redirect('/');
+      //  return redirect('/');
+        session()->flash('message', 'Article Created!'); 
+        return redirect('/post/'.$slug);
         
      //   $user->save();
      //   return 'data saved in database';
@@ -196,10 +206,10 @@ class PostController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show($id)
+    public function show($slug)
     {
         //
-        $post = Post::find($id);
+        $post = Post::where('slug', $slug)->first();
 		$comments = $post->comments()->orderBy('id', 'desc')->get();
         $countcomments = count($comments);
       //	$categories = Category::all();
@@ -247,7 +257,17 @@ class PostController extends Controller
         }
 		
 		$post = Post::find($id);
+        //slug starts
+        $slug_title = preg_replace('/[^A-Za-z0-9\- ]/', '', request('post_title'));
+        $slug_title = strtolower($slug_title);
+        $slug_date = $post->created_at;
+        $slug_date = date_format($slug_date,"Y-m-d");
+        $slug_combine = $slug_title.' '.$slug_date;
+        $slug_format = strtr($slug_combine, ' ', '-');
+        $slug = $slug_format;  //slug ends
+
 			if (Input::has('post_title')) $post->title = Input::get('post_title');
+            if (Input::has('post_title')) $post->slug = $slug;
 			if (Input::hasFile('post_image')) $post->image = $newfilename;
 			if (Input::has('post_description')) $post->body = Input::get('post_description');
 			if (Input::has('post_category')) $post->category_id = Input::get('post_category');
@@ -255,9 +275,9 @@ class PostController extends Controller
 			if (Input::has('status')) $post->status = Input::get('status');
 			$post->save();
 		//SESSION FLASH
-		session()->flash('message', 'Here is a default message'); //THEN INCLUDE IN THE REDIRECTED FUNCTION, HERE ITS "SHOW"
+		session()->flash('message', 'Article Updated!'); //THEN INCLUDE IN THE REDIRECTED FUNCTION, HERE ITS "SHOW"
 		//SESSION FLASH also include in the view with if
-		return redirect('/post/'.$id);
+		return redirect('/post/'.$slug);
 		#return redirect()->back();
     }
 

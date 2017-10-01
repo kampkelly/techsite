@@ -28,8 +28,8 @@
         <tbody>
 			 @foreach($posts as $post)
             <tr>
-                <td><a href="/post/{{$post->id}}">{{ str_limit($post->title, 35) }}...</a> </td>
-				<td><div><a href="/post/{{$post->id}}" class="btn btn-info btn-xs">View</a> <a href="/post/edit/{{$post->id}}" class="btn btn-warning btn-xs">Edit</a> <span>
+                <td><a href="/post/{{$post->slug}}">{{ str_limit($post->title, 35) }}...</a> </td>
+				<td><div><a href="/post/{{$post->slug}}" class="btn btn-info btn-xs">View</a> <a href="/post/edit/{{$post->id}}" class="btn btn-warning btn-xs">Edit</a> <span>
 				{{ Form::open(array('url' => '/post/'.$post->id, 'method' => 'DELETE')) }}
 					{{ Form::submit('Delete', null, ['class' => 'btn btn-danger btn-xs']) }}
 					{{ Form::close() }}</span></div>

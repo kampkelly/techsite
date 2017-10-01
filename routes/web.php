@@ -25,7 +25,7 @@ Route::get('/contact', 'HomeController@contact');
 Route::post('/contact', 'HomeController@sendcontact');
 Route::get('/blog', 'PostController@index');
 Route::get('/posts/new', 'PostController@create');
-Route::get('/post/{show}', 'PostController@show');
+Route::get('/post/{slug}', 'PostController@show');
 Route::get('/post/edit/{edit}', 'PostController@edit');
 Route::put('/post/{edit}', 'PostController@update');
 Route::delete('/post/{edit}', 'PostController@destroy');

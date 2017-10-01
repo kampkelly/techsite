@@ -17,7 +17,7 @@
         <h4 class="text-center">Recent Articles</h4>
         <ul class="list-group">
            @foreach($sideposts as $sidepost)
-                <li class="list-group-item"><a href="/post/{{$sidepost->id}}">{{$sidepost->title}}</a></li>
+                <li class="list-group-item"><a href="/post/{{$sidepost->slug}}">{{$sidepost->title}}</a></li>
             @endforeach
         </ul>
         <!--RECENT POSTS ENDS-->

@@ -8,7 +8,7 @@ use Carbon\Carbon;
 class post extends Model
 {
     //
-   protected $fillable = ['title', 'body', 'body_text', 'category', 'category_id', 'author_name', 'image', 'status', 'tags'];
+   protected $fillable = ['title', 'body', 'body_text', 'category', 'category_id', 'author_name', 'image', 'status', 'tags', 'slug'];
     
      public function category(){
         return $this->belongsTo(Category::class);
