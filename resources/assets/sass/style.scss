@@ -243,6 +243,10 @@ body {
 	}
 }
 .showarticlecontainer {
+	.article_description {
+		//line-height: $line-space;
+		font-family: 'Raleway', sans-serif !important	
+	}
 	@media #{$smartphone} {
 		padding: 0px !important;
 	}
@@ -526,8 +530,4 @@ footer {
 .articlescontainer {
 	
 }
-.showarticlecontainer {
-	.article_description {
-		color: red !important;
-	}
-}
+
