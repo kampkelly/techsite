@@ -19,7 +19,7 @@
         <h3 style="text-decoration: underline;">Projects</h3>
         <ul class="list-unstyled">
             <li>
-                <h5>- <a href="https://salesnaija.com" target="blank">SalesNaija -  A website selling IT products.</a></h5>
+                <h5>- <a href="https://salesnaija.com" target="blank">SalesNaija -  A website selling IT and general products.</a></h5>
                 <div class="row">
                     <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6" style="padding: 10px 40px 0px 40px;">
                        <img src="{{ asset('showcase/sales1.png') }}" style="max-height: 200px; cursor: zoom-in;" class="fancybox" title="salesnaija home page"> 
@@ -31,7 +31,7 @@
             </li> 
             <hr>
             <li>
-                <h5>- InstantPay -  A demo ecommerce website for women's fashion.</h5>
+                <h5> A demo ecommerce website.</h5>
                 <div class="row">
                     <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6" style="padding: 10px 40px 0px 40px;">
                        <img src="{{ asset('showcase/shopping2.png') }}" style="max-height: 200px; cursor: zoom-in;" class="fancybox" title="shopping cart"> 
