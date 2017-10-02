@@ -10,13 +10,13 @@
              <div class="row">
              <h4 class="text-center" style="text-decoration: underline;" >About Me</h4>
                 <img src="{{ asset('me.jpg') }}" class="oval">
-                <p class="lead">I am a full stack developer who builds, designs software and modern day responsive websites. In my spare time I do watch soccer, series (GOT), news and engaging in tech meetups.<br> Some of my coding languages are (but not limited to) HTML5, CSS3/SASS, PHP, Laravel, Javascript, Python, Jquery, VueJs, AngularJs, Git, and <a href="#others" style="color: gray; cursor: pointer; text-decoration: underline;">several</a> others :-).</p>
+                <p class="lead">I am a full stack developer who builds, designs software and modern day responsive websites. In my spare time I do watch football, series (GOT), reading and engaging in tech meetups.<br> Some languages are use are HTML5, CSS3/SASS, PHP, Laravel, Javascript, Python, Jquery, VueJs, AngularJs, Git, and <a href="#others" style="color: gray; cursor: pointer; text-decoration: underline;">several</a> others :-).</p>
              </div>
          </div>
         <!--ABOUT ENDS HERE -->
         <?php $k = ['game', 'game']; ?>
         <?php $k = ['game', 'game', 'game', 'game']; ?>
-        <h3 style="text-decoration: underline;">My Projects</h3>
+        <h3 style="text-decoration: underline;">Projects</h3>
         <ul class="list-unstyled">
             <li>
                 <h5>- <a href="https://salesnaija.com" target="blank">SalesNaija -  A website selling IT products.</a></h5>
@@ -78,7 +78,7 @@
 
         </ul><br>
         <div>
-            <h5>More extensive list of my programming skills</h5>
+            <h5>List of my programming skills</h5>
             <ul class="list-inline skills">
                 <li>HTML5</li>
                 <li>CSS3/SASS</li>
@@ -86,8 +86,8 @@
                 <li>Jquery</li>
                 <li>Bootstrap</li>
                 <li>MaterializeCss</li>
-                <li>AngularJs</li>
                 <li>VueJs</li>
+                <li>AngularJs</li>
                 <li>PHP</li>
                 <li>Laravel</li>
                 <li>Intermediate Python</li>
