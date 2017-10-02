@@ -89,10 +89,10 @@ class CommentController extends Controller
         //
 		$deleted = Comment::find($id);
 		$deleted->delete();
-		$id = request('post_id');
+		$slug = request('post_slug');
 		session()->flash('message', 'Comment Deleted!');
 		return redirect()->action(
-		'PostController@show', ['id' => $id]
+		'PostController@show', ['slug' => $slug]
 		);
     }
 }

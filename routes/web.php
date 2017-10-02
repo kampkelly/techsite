@@ -53,7 +53,7 @@ Route::get('/categories', 'CategoryController@index');
 Route::post('/categories', 'CategoryController@store');
 Route::get('/category/edit/{edit}', 'CategoryController@edit');
 Route::put('/category/{edit}', 'CategoryController@update');
-Route::delete('/category/{edit}', 'CategoryController@destroy');
+Route::delete('/category/{delete}', 'CategoryController@destroy');
 
 Route::delete('/comment/{delete}', 'CommentController@destroy');
 

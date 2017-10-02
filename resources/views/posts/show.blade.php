@@ -70,7 +70,7 @@
 								<p><span class="small">Comment:</span> <span style="padding-left: 5%;">{{$comment->comment}}</span></p>
                                 @if (Auth::user())
 								{{ Form::open(array('url' => '/comment/'.$comment->id, 'method' => 'DELETE')) }}
-								{{ Form::hidden('post_id', $post->id) }}
+								{{ Form::hidden('post_slug', $post->slug) }}
 								{{ Form::submit('Delete', null, ['class' => 'btn btn-danger btn-xs']) }}
 								{{ Form::close() }}
 								@endif
