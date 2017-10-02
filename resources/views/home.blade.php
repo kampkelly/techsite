@@ -17,8 +17,8 @@
                     </div>
                 </div>
                 <div class="col-xs-12 col-sm-12 col-md-10 col-lg-7">
-                   <h4 class="text-justif lea" style="font-weight: 300;"><img src="{{ asset('showcase/fet1.png') }}" class="rect hidden-lg">I specialize in web development, responsive design, HTML5, CSS3/SASS, Bootstrap, Javascript, PHP, Laravel.<br> I also make use of <a href="#languages" onclick="mystuff()">these</a>. <br><br>I am currently a freelancer but interested in working with a dynamic and growth oriented organization.<br> While away from these coding life, I do enjoy football, writing tutorials and getting acquainted.<br><br>
-                If you want to know more about me, my work or work together, feel free to contact me on hola@runoradjekpiyede.me or</h4>
+                   <h4 class="text-justif lea" style="font-weight: 300;"><img src="{{ asset('showcase/fet1.png') }}" class="rect hidden-lg">I specialize in web development, responsive design, HTML5, CSS3/SASS, Bootstrap, Javascript, PHP, Laravel.<br> I also make use of <a href="#languages" onclick="mystuff()">these</a>. <br><br>I am currently a freelancer but interested in working with a dynamic and growth oriented organization.<br> While away from these coding life, I do enjoy football, reading books and getting acquainted.<br><br>
+                If you want to know more about me, my work or work together, feel free to contact me on kampkellykeys@gmail.com or</h4>
                 <a href="/contact" class="btn btn-info btn-block" style="backgroun-color: #cb9126;">Contact Me</a>
                 </div>
                 <div class="col-xs-12 col-sm-5 col-md-5 col-lg-5 hidden-xs hidden-sm hidden-md">
