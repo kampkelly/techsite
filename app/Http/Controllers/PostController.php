@@ -292,7 +292,8 @@ class PostController extends Controller
         //
 		$deleted = Post::find($id);
 		$deleted->delete();
-		return redirect('admin/posts/panel');
+	//	return redirect('admin/posts/panel');
+        return redirect()->back();
 		
     }
 }
