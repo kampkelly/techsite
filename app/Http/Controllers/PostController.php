@@ -53,7 +53,7 @@ class PostController extends Controller
     public function publishedpanel()
     {
         //
-      $posts = Post::where('status', 'Published')->orderBy('id', 'desc')->simplePaginate(1); 
+      $posts = Post::where('status', 'Published')->orderBy('id', 'desc')->simplePaginate(20); 
       $categories = Category::all();
         return view('posts.published', compact('posts', 'categories'));
     }   
