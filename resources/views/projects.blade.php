@@ -10,7 +10,7 @@
              <div class="row">
              <h4 class="text-center" style="text-decoration: underline;" >About Me</h4>
                 <img src="{{ asset('me.jpg') }}" class="oval">
-                <p class="lead">I am a full stack developer who builds, designs software and modern day responsive websites. In my spare time I do watch football, series (GOT), reading and engaging in tech meetups.<br> Some languages are use are HTML5, CSS3/SASS, PHP, Laravel, Javascript, Python, Jquery, VueJs, AngularJs, Git, and <a href="#others" style="color: gray; cursor: pointer; text-decoration: underline;">several</a> others :-).</p>
+                <p class="lead">I am a full stack developer who builds, designs software and modern day responsive websites. In my spare time I do watch football, series (GOT), reading and engaging in tech meetups.<br> Some languages I use are HTML5, CSS3/SASS, PHP, Laravel, Javascript, Python, Jquery, VueJs, AngularJs, Git, and <a href="#others" style="color: gray; cursor: pointer; text-decoration: underline;">several</a> others :-).</p>
              </div>
          </div>
         <!--ABOUT ENDS HERE -->
