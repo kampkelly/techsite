@@ -90,11 +90,17 @@
                             <li>Jquery</li>\
                             <li>Bootstrap</li>\
                             <li>MaterializeCss</li>\
+                            <li>NodeJs</li>\
                             <li>AngularJs</li>\
                             <li>VueJs</li>\
                             <li>PHP</li>\
                             <li>Laravel</li>\
-                            <li>Intermediate Python</li>\
+                            <li>Express Framework</li>\
+                            <li>MySQL</li>\
+                            <li>MongoDB</li>\
+                            <li>Grunt</li>\
+                            <li>Bundling tools</li>\
+                            <li>Python</li>\
                             <li>Basic Ruby on Rails</li>\
                             <li>Git</li>\
                             <li>Website Deployments</li>\

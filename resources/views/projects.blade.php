@@ -10,7 +10,7 @@
              <div class="row">
              <h4 class="text-center" style="text-decoration: underline;" >About Me</h4>
                 <img src="{{ asset('me.jpg') }}" class="oval">
-                <p class="lead">I am a full stack developer who builds, designs software and modern day responsive websites. In my spare time I do watch football, series (GOT), reading and engaging in tech meetups.<br> Some languages I use are HTML5, CSS3/SASS, PHP, Laravel, Javascript, Python, Jquery, VueJs, AngularJs, Git, and <a href="#others" style="color: gray; cursor: pointer; text-decoration: underline;">several</a> others :-).</p>
+                <p class="lead">I am a full stack developer who builds, designs software and modern day responsive websites. In my spare time I do watch football, series (GOT), reading and engaging in tech meetups.<br> Some languages I use are HTML5, CSS3/SASS, PHP, Laravel, Javascript, NodeJs, Python, Git and <a href="#others" style="color: gray; cursor: pointer; text-decoration: underline;">several</a> others :-).</p>
              </div>
          </div>
         <!--ABOUT ENDS HERE -->
@@ -86,18 +86,24 @@
                 <li>Jquery</li>
                 <li>Bootstrap</li>
                 <li>MaterializeCss</li>
+                <li>NodeJs</li>
+                <li>Express</li>
                 <li>VueJs</li>
                 <li>AngularJs</li>
                 <li>PHP</li>
                 <li>Laravel</li>
-                <li>Intermediate Python</li>
+                <li>Python</li>
                 <li>Basic Ruby on Rails</li>
+                <li>Grunt</li>
+                <li>Bundling tools</li>
                 <li>Git</li>
                 <li>Website Deployments</li>
                 <li>Cordova</li>
                 <li>Wordpress</li>
                 <li>Wireframes</li>
                 <li>Responsive design</li>
+                <li>Single Page Applications</li>
+                <li>Progressive Web Apps</li>
             </ul>
         </div>
 

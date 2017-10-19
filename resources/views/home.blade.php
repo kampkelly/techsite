@@ -6,8 +6,8 @@
  <div class="row topspace">
     <div class="col-sm-9">
         <section class="" style="padding: 0px 20px 0px 20px;">
-            <h1 style="color: #96653b; text-transform: uppercase; font-weight: 600;" class="hide-smartphone">Hey, I'm Runor  Adjekpiyede, <span style="font-size: 70%; ">a Full Stack Developer</span> <span style="font-size: 70%;">and I  build</span> <span style="color: #286090;"> web apps.</span> </h1>
-            <h3 style="color: #96653b; text-transform: uppercase; font-weight: 600;" class="show-only-smartphone">Hey, I'm Runor  Adjekpiyede, <span style="font-size: 70%; ">a Full Stack Developer</span> <span style="font-size: 70%;">and I build</span> <br> <span style="color: #286090;"> web apps.</span> </h3>
+            <h1 style="color: #96653b; text-transform: uppercase; font-weight: 600;" class="hide-smartphone">Hey, I'm Runor  Adjekpiyede,<br> <span style="font-size: 45%; ">a Full Stack Developer</span> <span style="font-size: 45%;">and I  create</span> <span style="color: #286090;"> web apps.</span> </h1>
+            <h3 style="color: #96653b; text-transform: uppercase; font-weight: 600;" class="show-only-smartphone">Hey, I'm Runor  Adjekpiyede, <span style="font-size: 70%; ">a Full Stack Web Developer</span> <span style="font-size: 70%;">and I build</span> <br> <span style="color: #286090;"> web apps.</span> </h3>
             <div class="row">
                 <div class="col-xs-12 col-sm-7 col-md-7 col-lg-7" style="display: none;">
                     <h4 class="text-center text-info">A Quick Look</h4>
@@ -17,8 +17,9 @@
                     </div>
                 </div>
                 <div class="col-xs-12 col-sm-12 col-md-10 col-lg-7">
-                   <h4 class="text-justif lea" style="font-weight: 300;"><img src="{{ asset('showcase/fet1.png') }}" class="rect hidden-lg">I specialize in web development, responsive design, HTML5, CSS3/SASS, Bootstrap, Javascript, PHP, Laravel.<br> I also make use of <a href="#languages" onclick="mystuff()">these</a>. <br><br>I am currently a freelancer but interested in working with a dynamic and growth oriented organization.<br> While away from these coding life, I do enjoy football, reading books and getting acquainted.<br><br>
-                If you want to know more about me, my work or work together, feel free to contact me on kampkellykeys@gmail.com or</h4>
+                   <h4 class="text-justif lea" style="font-weight: 300; line-height: 22px;"><img src="{{ asset('showcase/fet1.png') }}" class="rect hidden-lg">I am currently a freelancer who creates standard websites, single page applications, progressive web apps or hybrid mobile apps for individuals and businesses.<br><br>
+                    Though a freelancer, am interested in working with a dynamic and growth oriented organization to provide my services. Some stuffs I use in my work are HTML5, CSS3/SASS, Javascript, NodeJS, PHP and Laravel.<br> The rest can be found <a href="#languages" onclick="mystuff()">here</a>.
+                    <br><br>While away from work, I do enjoy football, reading books and gaming. If you want to know more about me, my work or work together, feel free to contact me on <a href="mailto:kampkellykeys@gmail.com?Subject=Hi%20Would%20Like%20To%20Know%20More" target="_top">kampkellykeys@gmail.com</a> or click the button below</h4>
                 <a href="/contact" class="btn btn-info btn-block" style="backgroun-color: #cb9126;">Contact Me</a>
                 </div>
                 <div class="col-xs-12 col-sm-5 col-md-5 col-lg-5 hidden-xs hidden-sm hidden-md">
