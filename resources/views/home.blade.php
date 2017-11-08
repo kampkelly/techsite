@@ -18,7 +18,17 @@
                 </div>
                 <div class="col-xs-12 col-sm-12 col-md-10 col-lg-7">
                    <h4 class="text-justif lea" style="font-weight: 300; line-height: 22px;"><img src="{{ asset('showcase/fet1.png') }}" class="rect hidden-lg">I am currently a freelancer who creates standard websites, single page applications, progressive web apps or hybrid mobile apps for individuals and businesses.<br><br>
-                    Though a freelancer, am interested in working with a dynamic and growth oriented organization to provide my services. Some stuffs I use in my work are HTML5, CSS3/SASS, Javascript, NodeJS, PHP and Laravel.<br> The rest can be found <a href="#languages" onclick="mystuff()">here</a>.
+                    Though a freelancer, am interested in working with a dynamic and growth oriented organization to provide my services. 
+                    Some languages I use i make use of are 
+                    <ul>
+                        <li>HTML5</li>
+                        <li>Css3/Sass</li>
+                        <li>Javascript</li>
+                        <li>NodeJs</li>
+                        <li>PHP</li>
+                        <li>Python</li>
+                    </ul>
+                    The rest are <a href="#languages" onclick="mystuff()"><strong>here</strong></a>.
                     <br><br>While away from work, I do enjoy football, reading books and gaming. If you want to know more about me, my work or work together, feel free to contact me on <a href="mailto:kampkellykeys@gmail.com?Subject=Hi%20Would%20Like%20To%20Know%20More" target="_top">kampkellykeys@gmail.com</a> or click the button below</h4>
                 <a href="/contact" class="btn btn-info btn-block" style="backgroun-color: #cb9126;">Contact Me</a>
                 </div>
